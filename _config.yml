@@ -1,7 +1,7 @@
 title: Gloss'd
 description: >
   Book reviews.
-baseurl: "/immaculate"
+baseurl: "/glossd"
 url: "https://jamie-reece.github.io"
 paginate:	5 # The number of posts to show per page on your homepage
 name: "Jamie Bowman"
