@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Immaculate Showcase
+title: 'Post #2' 
 ---
 
 This is an example post showcasing the various features of [Immaculate](https://github.com/siawyoung/immaculate) and [Tufte CSS](https://github.com/edwardtufte/tufte-css). Refer to the Markdown source of this post for a better understanding!
@@ -17,10 +17,23 @@ Here is a **bold**, an *italic*, and a [hyperlink](/#).
 
 Now, presenting to you a block quote with a Tufte-styled footer:
 
-> But say, my brothers, what can the child do that even the lion could not do? Why must the preying lion
-> still become a child? The child is innocence and forgetting, a new beginning, a game, a self-propelled
-> wheel, a first movement, a sacred "Yes." For the game of creation, my brothers, a sacred "Yes" is needed:
-> the spirit now wills his own will, and he who had been lost to the world now conquers the world.
+{% blockquote Friedrich Nietzsche, Thus Spoke Zarathustra %}
+But say, my brothers, what can the child do that even the lion could not do? Why must the preying lion still become a child? The child is innocence and forgetting, a new beginning, a game, a self-propelled wheel, a first movement, a sacred "Yes." For the game of creation, my brothers, a sacred "Yes" is needed: the spirit now wills his own will, and he who had been lost to the world now conquers the world.
+{% endblockquote %}
+
+This is a normal-sized image.
+
+{% image /assets/images/sushi.jpg 600 400 %}
+
+This is a full-width image.
+
+{% image /assets/images/sf.jpg 1400 933 fw %}
+
+(All images mine.)
+
+This is a Youtube video.
+
+{% youtube lBTCB7yLs8Y 600 300 %}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod{% sidenote side1 This is a sidenote. %} tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
