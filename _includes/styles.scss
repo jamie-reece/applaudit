@@ -53,4 +53,10 @@ code {
 
 div.page-wrapper {
   display: flex;
+  div#side-nav-container {
+    width: 12.5%;
+  }
+  div#page-content-container {
+    width: 87.5%;
+  }
 }
