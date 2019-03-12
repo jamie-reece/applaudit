@@ -1,6 +1,7 @@
-
 $baseurl: '{{ site.baseurl }}';
 $grey-color: #828282;
+
+/*** ----- predefined styles ----- ***/
 
 @import 'tufte';
 // @import 'syntax-highlighting';
@@ -46,4 +47,22 @@ code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 1.125rem;
   line-height: 1.6;
+}
+
+/*** ----- custom styles ----- ***/
+
+div.page-wrapper {
+  display: flex;
+  div.side-nav-container {
+    flex-basis: 1;
+  }
+}
+
+div.post-preview {
+  display: flex;
+}
+
+img.post-thumbnail {
+  width: 15%;
+  height: auto;
 }
