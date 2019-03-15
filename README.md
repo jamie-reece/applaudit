@@ -7,8 +7,8 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 ## To-do
 
 - [X] ~~remove underline from sidenav list items~~ `15/03/2019`
-- [ ] add home icon to top of sidenav
-- [ ] add paths to hrefs sidenav
+- [X] ~~add home icon to top of sidenav~~ `15/03/2019`
+- [X] ~~add paths to hrefs sidenav~~ `15/03/2019`
 
 ## License
 
