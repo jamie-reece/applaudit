@@ -51,11 +51,24 @@ code {
 
 /*** ----- custom styles ----- ***/
 
+main {
+  margin-top: 0;
+}
+
+footer.site-footer {
+  width: 100%;
+  section.copyright {
+    float: right;
+    padding-right: 1em;
+  }
+}
+
 div.page-wrapper {
   display: flex;
   div#side-nav-container {
     width: 6%;
-    // border-right: 1px solid #efefef;
+    height: 100%;
+    position: fixed;
     box-shadow: 0px 0px 6px 0.5px rgb(247, 245, 245);
     ul.nav-items-list {
       list-style-type: none;
@@ -76,6 +89,9 @@ div.page-wrapper {
           background-color: rgba(245, 244, 244,.5);
           cursor: pointer;
         }
+        &:focus {
+          background-color: rgb(247, 245, 245);
+        }
       }
       li a {
         text-decoration: none;
@@ -93,6 +109,7 @@ div.page-wrapper {
     }
   }
   div#page-content-container {
+    margin-left: 6%;
     width: 94%;
     padding-left: 2.5em;
   }
