@@ -1,16 +1,8 @@
----
----
-
 // add active class dynamically to navlinks based on current url
 
 $(function(){
-  var current = location.pathname;
-  var permalink = "{{ page.permalink }}"
-  $('#nav-item a').each(function(){
-      var $this = $(this);
-      // if the current path is like this link, make it active
-      if($this.attr('href').indexOf(current) !== -1){
-          $this.addClass('active');
-      }
-  })
+  // returns basePath ignoring extra links i.e. /reviews/~~new-page~~
+  var basePath = '/' + window.location.pathname.split('/', 2).filter(Boolean).join('/') + '/';
+  // adds active class to items w/ corresponding url
+  $('li#nav-item a[href="' + basePath + '"]').addClass('active');
 })
