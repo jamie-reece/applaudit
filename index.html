@@ -4,29 +4,52 @@ layout: default
 
 <main>
 
-  <article class="post">  
+  <article class="post homepage-title">  
     <h1>{{ site.title }}</h1>
-    <h3>{{ site.description }}</h3>
+    <h3 class="sitetitle-sub">Latest book reviews:</h3>
   </article>
+
+  <hr class="post-separator">
 
   <div>
     {% for post in paginator.posts %}
-    <article itemscope itemtype="http://schema.org/BlogPosting" role="article">
-
-      <header>
-        <h2 itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-      </header>
-
-      <div class="post-meta">
-        <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+    <article class="homepage-posts" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+      
+      <div class="post-preview-assets">
+        <img class="post-thumbnail" src="{{ site.baseurl }}/assets/images/{{ post.thumbnail }}">
       </div>
 
-      <div class="post-preview">
-        <p class="post-extract">{{ post.extrait }}</p>
-        <!-- <img class="post-thumbnail" src="{{ post.thumbnail }}"> -->
+      <div class="post-preview-content">
+        <header>
+          <h2 itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+        </header>
+  
+        <div class="post-meta">
+          <time datetime="{{ post.date | date_to_long_string }}">
+            <i class="fas fa-clock"></i>{{ post.date | date_to_long_string }} 
+            <span>•</span> 
+            <span><i class="fas fa-user"></i>{{ post.author }}</span>
+          </time>
+          <div class="post-tags">
+            <ul>
+              {% for tag in post.tags %}
+              <li class="post-tag"><i class="fas fa-tag"></i>{{ tag | capitalize }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+
+        <div class="post-preview">
+          <p class="post-extract">{{ post.extrait }}</p>
+        </div>
+
+
       </div>
 
     </article>
+
+    <hr class="post-separator">
+
     {% endfor %}
   </div>
 
