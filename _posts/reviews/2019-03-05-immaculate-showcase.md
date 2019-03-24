@@ -1,8 +1,9 @@
 ---
 layout: post
 title: 'Benjamin Black - Prague Nights'
-category: posts
-permalink: /black-prague-nights/
+category: reviews
+tags: [historical fiction, pseudonym, crime, court, prague, winter]
+permalink: :categories/black-prague-nights/
 thumbnail: "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.deadgoodbooks.co.uk%2Fwp-content%2Fuploads%2F2017%2F05%2F9780241297858.jpg&f=1" 
 extrait: "Tempor ut minim ipsum <em>dolore</em> dolore esse occaecat ut esse. Mollit consequat amet eu mollit sit. Voluptate aliquip sint amet qui cillum culpa commodo. Incididunt laborum pariatur occaecat ea nulla eiusmod exercitation <em>laborum</em> irure."
 ---

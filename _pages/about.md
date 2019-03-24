@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+icon: "fas fa-info-circle"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac augue libero.

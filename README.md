@@ -13,6 +13,8 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 - [X] ~~remote double copyright element~~ `23/03/2019`
 - [ ] set alt descriptors on sidenav icons(?)
 - [ ] make sidenav 'tab' focused on page load
+- [ ] move static pages into _pages folder
+  - see solution [here](https://github.com/jekyll/jekyll/issues/920#issuecomment-63093764)
 
 ## License
 

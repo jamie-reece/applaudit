@@ -1,8 +1,9 @@
 ---
 layout: post
 title: 'Rachel Cusk - Outline'
-category: posts
-permalink: /cusk-outline/
+category: reviews
+tags: [fiction, modern, travel, trilogy, faber]
+permalink: ":categories/cusk-outline/"
 thumbnail: "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-ap-southeast-2.amazonaws.com%2Fassets.allenandunwin.com%2Fimages%2Fsmall%2F9780571346769.jpg&f=1"
 extrait: "<em>In exercitation</em> non quis est reprehenderit veniam ex aute laboris elit laboris fugiat pariatur. Esse sit ex et officia nostrud incididunt non. Sit do ad ullamco anim voluptate. Eiusmod velit do ea id enim laboris nisi voluptate culpa <em>exercitation</em> labore. Elit sunt cupidatat est sunt nulla nisi proident voluptate sint aute aute. Do ut consectetur reprehenderit non sunt."
 ---

@@ -1,4 +1,4 @@
-<nav id="side-nav">
+<!-- <nav id="side-nav">
   <ul class="nav-items-list">
     <li class="nav-item"><a href="{{ site.baseurl }}/"><i class="fas fa-home" alt="home"></i></a></li>
     <li class="nav-item"><a href="{{ site.baseurl }}/reviews/"><i class="fas fa-star-half-alt" alt="reviews"></i></a></li>
@@ -7,5 +7,18 @@
     <li class="nav-item"><a href="{{ site.baseurl }}/archive/"><i class="fas fa-archive" alt="archive"></i></a></li>
     <li class="nav-item"><a href="{{ site.baseurl }}/tags/"><i class="fas fa-tags" alt="tags"></i></a></li>
     <li class="nav-item"><a href="{{ site.baseurl }}/more/"><i class="far fa-plus-square" alt="more"></i></a></li>
+  </ul>
+</nav> -->
+
+<nav id="side-nav">
+  <ul class="nav-items-list">
+    <li id="nav-item"><a href="{{ site.baseurl }}/"><i class="fas fa-home"></i></a></li>
+    {% for page in site.pages %}
+    <li id="nav-item">
+        <a href="{{ site.baseurl }}/{{ page.title | downcase }}/">
+          <i class="{{ page.icon }}"></i>
+        </a>
+      </li>
+    {% endfor %}
   </ul>
 </nav>
