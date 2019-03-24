@@ -17,6 +17,7 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 - [ ] set homepage 'tab' to `active` class by default on pageload
 - [ ] fix order of nav links
 - [ ] fix blank nav links
+- [ ] add thumbnail images to post preview(?)
 
 ## License
 
