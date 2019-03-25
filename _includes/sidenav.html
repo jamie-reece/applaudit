@@ -13,12 +13,15 @@
 <nav id="side-nav">
   <ul class="nav-items-list">
     <li id="nav-item"><a href="{{ site.baseurl }}/"><i class="fas fa-home"></i></a></li>
-    {% for page in site.pages %}
-    <li id="nav-item">
-        <a href="{{ site.baseurl }}/{{ page.title | downcase }}/">
-          <i class="{{ page.icon }}"></i>
-        </a>
-      </li>
+    {% assign pages = site.pages | sort:"navigation_weight" %}
+    {% for page in pages %}
+      {% if page.navigation_weight %}
+      <li id="nav-item">
+          <a href="{{ site.baseurl }}/{{ page.title | downcase }}/">
+            <i class="{{ page.icon }}"></i>
+          </a>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </nav>
