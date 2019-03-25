@@ -13,12 +13,12 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 - [X] ~~remote double copyright element~~ `23/03/2019`
 - [X] ~~add class `active` to sidenav 'tab' based on url~~ `24/03/2019` answer [here](https://stackoverflow.com/questions/55323978/how-to-add-class-active-to-nav-item-whose-href-is-in-the-location-pathname/55324518#55324518)
 - [X] ~~move static pages into _pages folder~~ `24/03/2019` solution [here](https://github.com/jekyll/jekyll/issues/920#issuecomment-63093764)
-- [ ] set alt descriptors on sidenav icons(?)
 - [X] ~~set homepage 'tab' to `active` class by default on pageload~~ `24/03/2019` resolved by active class above
-- [ ] fix order of nav links
-- [ ] fix blank nav links
+- [X] ~~fix order of nav links~~ `25/03/2019` solved by navigation_weight. see [here](https://learn.cloudcannon.com/jekyll/simple-navigation/)
+- [X] ~~fix blank nav links~~ `25/03/2019` solved by above
 - [X] ~~add thumbnail images to post preview(?)~~ `24/03/2019`
 - [X] ~~add tags to post preview~~ `24/03/2019`
+- [ ] add labelling method to side navigation
 
 ## License
 
