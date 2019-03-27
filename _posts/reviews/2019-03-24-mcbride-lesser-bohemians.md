@@ -4,7 +4,7 @@ title: 'Eimer McBride – The Lesser Bohemians'
 author: Jamie Bowman
 category: reviews
 tags: [fiction, London, Faber, Goldsmiths]
-permalink: ":categories/johnson-train-dreams/"
+permalink: ":categories/mcbride-lesser-bohemians/"
 thumbnail: "mcbride-lesser-bohemians.jpg"
 extrait: "Aliquip fugiat excepteur anim <em>consectetur</em> quis ea officia. Excepteur sunt velit eu et voluptate mollit do. Ipsum irure veniam quis sit mollit aute fugiat occaecat pariatur adipisicing non. Aliqua ad esse eu occaecat pariatur magna ea. Incididunt nisi est ad laboris anim ipsum."
 ---

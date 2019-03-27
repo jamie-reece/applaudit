@@ -89,6 +89,7 @@ div.page-wrapper {
         &:hover {
           opacity: 0.5;
           background-color: rgba(245, 244, 244, .5);
+          color: rgba(69, 149, 180, .9);
           cursor: pointer;
         }
         a {
@@ -176,13 +177,13 @@ article.homepage-posts {
 }
 
 h2.post-title {
-  margin-top: 3em;
+  margin-top: 2.1em;
 }
 
 footer.site-footer {
   width: 100%;
   section.copyright {
-    float: right;
-    padding-right: 1em;
+    float: left;
+    padding-left: 8.4em;
   }
 }
