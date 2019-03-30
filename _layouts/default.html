@@ -8,9 +8,20 @@
       {% include sidenav.html %}
     </div>
     <div id="page-content-container">
-      {% include header.html %}
 
-      {{ content }}
+      <div id="page-col-one">
+      
+        {% include header.html %}
+
+        {{ content }}
+      
+      </div>
+
+      <div id="page-col-two">
+
+        {% include page-col-two.html %}
+
+      </div>
 
     </div>
   </div>

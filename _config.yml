@@ -12,3 +12,9 @@ kramdown:
 gems:
   - jekyll-paginate
 include: ['_pages']
+
+defaults:
+  - scope:
+      path: "{{site.baseurl}}/assets/images"
+    values:
+      image: true

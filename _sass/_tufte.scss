@@ -81,14 +81,15 @@ article { position: relative;
           padding: 5rem 0rem; }
 
 section { padding-top: 1rem;
-          padding-bottom: 1rem; }
+          padding-bottom: 1rem;
+          padding-right: 1em; }
 
 p, ol, ul, .pagination a, .pagination em, table { font-size: 1.4rem; }
 
 p { line-height: 2rem;
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
-    padding-right: 0;
+    padding-right: 1em;
     vertical-align: baseline; }
 
 /* Chapter Epigraphs */
@@ -107,7 +108,7 @@ div.epigraph > blockquote > footer > cite { font-style: italic; }
 
 blockquote { font-size: 1.4rem; }
 
-blockquote p { width: 50%; }
+blockquote p { width: 100%; }
 
 blockquote .footer { width: 50%;
                     font-size: 1.1rem;
@@ -201,7 +202,7 @@ img { max-width: 100%; }
 .sidenote:before { content: counter(sidenote-counter) " ";
                    top: -0.5rem; }
 
-p, footer, table, div.table-wrapper-small, div.supertable-wrapper > p, div.booktabs-wrapper { width: 55%; }
+p, footer, table, div.table-wrapper-small, div.supertable-wrapper > p, div.booktabs-wrapper { width: 100%; }
 
 div.fullwidth, table.fullwidth { width: 100%; }
 
