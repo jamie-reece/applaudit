@@ -19,6 +19,7 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 - [X] ~~add thumbnail images to post preview(?)~~ `24/03/2019`
 - [X] ~~add tags to post preview~~ `24/03/2019`
 - [ ] add labelling method to side navigation
+- [ ] find a better way to store metadata i.e. not as YAML frontmatter
 
 ## License
 

@@ -1,0 +1,20 @@
+<div class="book-meta">
+  {% if page.category == "reviews"%}
+  <div class="book-thumbnail">
+    <img class="post-thumbnail-lg" src="{{ site.baseurl }}/assets/images/{{ page.thumbnail }}" alt="{{ page.thumbnail }}">
+  </div>
+  <div class="book-details">
+    <ul class="book-meta-list">
+      <li class="book-meta-item"><p><a href="#">{{ page.meta-six }}</a></p></li>
+      <li class="book-meta-item"><p><em>{{ page.meta-seven }}</em></p></li>
+    </ul>
+    <ul class="book-meta-list">
+      <li class="book-meta-item"><p>{{ page.meta-one }}</p></li>
+      <li class="book-meta-item"><p>{{ page.meta-two }}</p></li>
+      <li class="book-meta-item"><p>{{ page.meta-three }}</p></li>
+      <li class="book-meta-item"><p>{{ page.meta-four }}</p></li>
+      <li class="book-meta-item"><p>{{ page.meta-five }}</p></li>
+    </ul>
+  </div>
+  {% endif %}
+</div>

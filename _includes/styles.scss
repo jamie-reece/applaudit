@@ -129,7 +129,41 @@ div.page-wrapper {
     display: flex;
     div#page-col-one {
       width: 60%;
-      // border-right: 1px groove whitesmoke;
+      .post-meta {
+        i.fa-clock, i.fa-user {
+          margin-right: 0.2em;
+          color: rgba(255, 127, 80, .8);
+          transform: scale(0.8);
+        }
+        div.post-tags {
+          color: rgba(126, 125, 125, 0.8);
+          text-align: left;
+          ul {
+            display: flex;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            align-items: baseline;
+            span {
+              margin: 0 0.2em;
+              &:first-child {
+                display: none;
+              }
+            }
+            li.post-tag {
+              display: inline;
+              font-size: 0.8em;
+              margin: 0.2em 0.2em 0 0;
+              padding: 0;
+              i {
+                margin-right: 0.1em;
+                transform: scale(0.6);
+                color: rgba(69, 149, 180, 0.6);
+              }
+            }
+          }
+        }
+      }
     }
     div#page-col-two {
       width: 40%;
@@ -138,13 +172,41 @@ div.page-wrapper {
         display: flex;
         margin-top: 5.5em;
         div.book-thumbnail {
-          width: 40%;
+          width: 50%;
           img.post-thumbnail-lg {
+            float: right;
+            max-width: 90%;
             box-shadow: 0px 0px 6px 2px rgba(236, 236, 236, 0.8);
           }
         }
         div.book-details {
-          width: 60%;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          ul.book-meta-list {
+            padding-left: 1em;
+            margin: 0;
+            list-style-type: none;
+            width: 80%;
+            li.book-meta-item {
+              padding: 0;
+              & p {
+                padding: 0;
+                margin: 0;
+                font-size: 0.8em;
+                color: grey;
+                width: 100%;
+                & a {
+                  background-repeat: no-repeat;
+                  text-decoration: underline;
+                  &:hover {
+                    opacity: 0.6;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -206,6 +268,8 @@ article.homepage-posts {
     }
   }
 }
+
+
 
 h2.post-title {
   margin-top: 2.1em;

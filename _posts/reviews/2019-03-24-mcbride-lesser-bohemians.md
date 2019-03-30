@@ -6,6 +6,13 @@ category: reviews
 tags: [fiction, London, Faber, Goldsmiths]
 permalink: ":categories/mcbride-lesser-bohemians/"
 thumbnail: "mcbride-lesser-bohemians.jpg"
+meta-one: "Faber & Faber"
+meta-two: "September 1st, 2016"
+meta-three: "320pp."
+meta-four: "London, England"
+meta-five: "James Tait Black Memorial Prize 2017"
+meta-six: "Eimer McBride"
+meta-seven: "The Lesser Bohemians"
 extrait: "Aliquip fugiat excepteur anim <em>consectetur</em> quis ea officia. Excepteur sunt velit eu et voluptate mollit do. Ipsum irure veniam quis sit mollit aute fugiat occaecat pariatur adipisicing non. Aliqua ad esse eu occaecat pariatur magna ea. Incididunt nisi est ad laboris anim ipsum."
 ---
 
