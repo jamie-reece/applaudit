@@ -6,15 +6,16 @@ layout: default
 
   <h2 class="post-title" itemprop="name">
     <a href="{{ site.baseurl }}{{ page.url }}" itemprop="url">{{ page.title }}</a>
-    <span style="float:right;padding-right:1.8em;font-size:0.55em;padding-top:0.5em;"><i class="fas fa-hourglass-half" style="font-size:0.7em;"></i>{% include reading-time.html %}</span>
   </h2>
 
   <div class="post-meta">
       <time datetime="{{ page.date | date_to_long_string }}">
         <i class="fas fa-clock"></i>{{ page.date | date_to_long_string }} 
-        <span>•</span> 
-        <span><i class="fas fa-user"></i>{{ page.author }}</span>
       </time>
+      <span>•</span> 
+      <span><i class="fas fa-user"></i>{{ page.author }}</span>
+      <span>•</span>
+      <span class="reading-time"><i class="fas fa-hourglass-half"></i>{% include reading-time.html %}</span>
       <div class="post-tags">
         <ul>
           {% for tag in page.tags %}
