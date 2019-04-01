@@ -20,7 +20,7 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 - [X] ~~add tags to post preview~~ `24/03/2019`
 - [ ] add labelling method to side navigation
 - [ ] find a better way to store book metadata i.e. not as YAML frontmatter
-- [ ] add breadcrumbs beneath small header nav
+- [X] ~~add breadcrumbs beneath small header nav~~ `01/04/2019` added inline
 - [X] ~~add reading time to post page and post index~~ `01/04/2019` see [solution](https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/)
 
 ## License
