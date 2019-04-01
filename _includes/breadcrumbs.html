@@ -1,1 +1,19 @@
 <!-- 'breadcrumbs' beneath header  -->
+
+{% if page.category == "reviews" %}
+<div class="breadcrumb-trail">
+  <span class="breadcrumb"><a class="page-link"
+      href="{{ site.baseurl }}/{{ page.category }}">{{ page.category | capitalize }}</a></span>
+  <span>/</span>
+  <span class="breadcrumb-active"><em>{{ page.title | split, '–' | last }}</em></span>
+</div>
+{% endif %}
+
+{% if page.category == "writing" %}
+<div class="breadcrumb-trail">
+  <span class="breadcrumb"><a class="page-link"
+      href="{{ site.baseurl }}/{{ page.category }}">{{ page.category | capitalize }}</a></span>
+  <span>/</span>
+  <span class="breadcrumb-active"><em>{{ page.title }}</em></span>
+</div>
+{% endif %}

@@ -23,6 +23,26 @@ article {
 
 header {
   margin-top: 20px;
+  margin-bottom: 0.6em;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1em;
+  & a.page-link {
+    background-repeat: no-repeat;
+  }
+  & span.breadcrumb-active {
+    color: rgb(69, 149, 180);
+  }
+  & a:hover {
+    opacity: 0.6;
+  }
+}
+
+hr.header-separator {
+  border-color: rgba(252, 252, 252, 0.1);
+  width: 100%;
+  vertical-align: left;
+  margin: 0;
 }
 
 .post-meta {
@@ -69,11 +89,13 @@ main {
 
   h3.sitetitle-sub {
     margin: 1em 0 0.5em 0;
+    padding-right: 1em;
+    width: 100%;
   }
 
   hr {
     border-color: rgba(252, 252, 252, 0.2);
-    width: 60%;
+    width: 100%;
     vertical-align: left;
     margin: 0;
   }
@@ -315,7 +337,7 @@ article.homepage-posts {
 }
 
 h2.post-title {
-  margin-top: 2.1em;
+  margin-top: 1.6em;
 }
 
 span.reading-time {

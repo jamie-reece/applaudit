@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
+<main>
+<article class="page-title">
 
-<article class="post">
-
-  <div class="page-meta">
-    <h1 class="page-title">{{ page.title }}</h1>
-  </div>
-
-  <section>
-    {{content}}
-  </section>
-
+        <h1>{{ page.title }}</h1>
+        <h3 class="sitetitle-sub">{{ page.desc }}:</h3>
+        
 </article>
+<hr class="post-separator">
+  
+    {{content}}
+
+</main>

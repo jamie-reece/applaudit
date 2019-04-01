@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Daisy Johnson - Everything Under'
+title: 'Daisy Johnson – Everything Under'
 author: Jamie Bowman
 category: reviews
 tags: [fiction, Blackwells, debut, booker longlist]

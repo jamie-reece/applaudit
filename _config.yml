@@ -1,7 +1,7 @@
-title: Gloss'd
+title: Applaudit
 description: >
   Book reviews and writing.
-baseurl: "/glossd"
+baseurl: "/applaudit"
 url: "https://jamie-reece.github.io"
 paginate:	3 # The number of posts to show per page on your homepage
 name: "Jamie Bowman"
