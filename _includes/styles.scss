@@ -26,15 +26,31 @@ header {
   margin-bottom: 0.6em;
   display: flex;
   justify-content: space-between;
-  padding-right: 1em;
-  & a.page-link {
-    background-repeat: no-repeat;
+  div.nav-brand {
+    width: 12%;
+    & a {
+      font-family: 'Fredericka the Great', cursive;
+      background-repeat: no-repeat;
+      font-size: 1.2em;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
-  & span.breadcrumb-active {
-    color: rgb(69, 149, 180);
-  }
-  & a:hover {
-    opacity: 0.6;
+  div.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+      & a.page-link {
+        background-repeat: no-repeat;
+      }
+      & span.breadcrumb-active {
+        color: rgb(69, 149, 180);
+      }
+      & a:hover {
+        opacity: 0.6;
+      }
   }
 }
 
@@ -85,13 +101,17 @@ main {
 
   article.homepage-title {
     width: 100%;
+    
+    h1.site-title {
+      font-family: 'Fredericka the Great', cursive;
+    }
+    h3.sitetitle-sub {
+      margin: 1em 0 0.5em 0;
+      padding-right: 1em;
+      width: 100%;
+    }
   }
 
-  h3.sitetitle-sub {
-    margin: 1em 0 0.5em 0;
-    padding-right: 1em;
-    width: 100%;
-  }
 
   hr {
     border-color: rgba(252, 252, 252, 0.2);
