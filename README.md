@@ -27,3 +27,7 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 ## License
 
 MIT
+
+## Attributions
+
+[Book icon](https://thenounproject.com/term/book/787671/) by Maxim Kulikov from the Noun Project

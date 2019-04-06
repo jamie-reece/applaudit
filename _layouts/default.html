@@ -14,6 +14,8 @@
         {% include header.html %} <!-- contains breadcrumbs.html within -->
 
         {{ content }}
+
+        {% include copyright.html %} <!-- rather than in site-footer -->
       
       </div>
 
@@ -26,7 +28,7 @@
     </div>
   </div>
 
-  {% include footer.html %}
+  {% include footer.html %} <!-- currently blank (may get scrapped) -->
 
   {% include scripts.html %}
 
