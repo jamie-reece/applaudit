@@ -52,7 +52,7 @@ layout: default
         </div>
 
         <div class="post-preview">
-          <p class="post-extract">{{ post.extrait }}</p>
+          <p class="post-extract">{{ post.excerpt | truncate: 280 }}</p>
         </div>
 
 

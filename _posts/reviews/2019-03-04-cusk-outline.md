@@ -6,7 +6,6 @@ category: reviews
 tags: [fiction, modern, travel, trilogy, Faber]
 permalink: ":categories/cusk-outline/"
 thumbnail: "cusk-outline.jpg"
-extrait: "<em>In exercitation</em> non quis est reprehenderit veniam ex aute laboris elit laboris fugiat pariatur. Esse sit ex et officia nostrud incididunt non. Sit do ad ullamco anim voluptate. Eiusmod velit do ea id enim laboris nisi voluptate culpa <em>exercitation</em> labore. Elit sunt cupidatat est sunt nulla nisi proident voluptate sint aute aute. Do ut consectetur reprehenderit non sunt."
 ---
 
 Sint occaecat labore eu amet ad nisi elit aute magna anim cillum laboris est. Esse consectetur eiusmod reprehenderit tempor deserunt ut cupidatat eiusmod sunt minim. Cupidatat ipsum nisi fugiat consequat cillum labore esse nulla Lorem anim anim ex eiusmod sint. Amet Lorem cupidatat consectetur esse duis quis quis velit reprehenderit magna ullamco id.

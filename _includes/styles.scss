@@ -134,9 +134,10 @@ div.page-wrapper {
     width: 6%;
     height: 100%;
     position: fixed;
-    box-shadow: inset 0px 0px 6px 4px rgb(245, 247, 247);
-    background-color: rgba(245, 247, 247, 0.4);
-
+    box-shadow: inset 0px 0px 6px 1px #f9f9f9;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23e6e6e6' fill-opacity='0.6' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  
     ul.nav-items-list {
       list-style-type: none;
       padding: 0;
@@ -243,8 +244,9 @@ div.page-wrapper {
       width: 34%;
       height: 100%;
       padding: 0 1.5em;
-      box-shadow: inset 0px 0px 6px 4px rgb(247, 245, 245);
-      background-color: rgba(247, 245, 245, 0.4);
+      box-shadow: inset 0px 0px 4px 0px #f9f9f9;
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23e6e6e6' fill-opacity='0.6' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
       position: fixed;
       left: 100%;
       top: 0%;
