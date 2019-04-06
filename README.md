@@ -22,7 +22,10 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 - [ ] find a better way to store book metadata i.e. not as YAML frontmatter
 - [X] ~~add breadcrumbs beneath small header nav~~ `01/04/2019` added inline
 - [X] ~~add reading time to post page and post index~~ `01/04/2019` see [solution](https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/)
-- [ ] truncate post preview(?)
+- [X] ~~truncate post preview~~ `06/04/2019` see [liquid filter](https://shopify.github.io/liquid/filters/truncate/)
+- [ ] stack(?) side-col on smaller screen widths
+- [ ] collapse side-nav on smaller screen widths
+- [ ] add social icon 'tab's to lower right hand side of main column
 
 ## License
 
