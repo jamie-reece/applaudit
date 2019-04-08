@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1250px) {
+
+  div.page-wrapper {
+
+    div.side-nav-fix {
+
+      div#side-nav-container {
+
+        & nav#side-nav {
+          display: none;
+        }
+
+        & nav#side-nav-collapsed {
+          display: block;
+          background-color: #ffffff;
+          height: 100%;
+          padding: 1em 0 0 1em;
+          & button {
+            height: 5em;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 0.5em;
+            &:hover {
+              cursor: pointer;
+            }
+            & i {
+              font-size: 2em;
+            }
+          }
+        }
+
+        & nav#side-nav-expanded {
+          height: 100%;
+          width: 100%;
+          background-color: #ffffff;
+        }
+
+      }
+    }
+
+    div#page-content-container {
+
+      div.col-one-fix {
+        width: 100%;
+
+        div#page-col-one {
+          width: 100%;
+        }
+      }
+
+      div.col-two-fix {
+        width: 0%;
+
+        div#page-col-two {
+          width: 0%;
+          display: none;
+        }
+      }
+
+    }
+  }
+}
