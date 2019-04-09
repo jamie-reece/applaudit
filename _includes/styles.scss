@@ -4,6 +4,8 @@ $grey-color: #828282;
 
 @import 'tufte';
 
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:600i');
+
 // @import 'syntax-highlighting';
 
 *, *:before, *:after {
@@ -115,7 +117,7 @@ main {
     h1.site-title, h1.page-heading {
       font-family: 'Crimson Text', cursive;
       opacity: 0.8;
-      letter-spacing: -2px;
+      letter-spacing: -2.5px;
       font-style: italic;
       font-weight: 600;
       text-shadow: 1px 1px 1px whitesmoke;
