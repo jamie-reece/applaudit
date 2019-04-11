@@ -208,6 +208,7 @@ div.page-wrapper {
       padding: 0 2.5em;
 
       .post-meta {
+        width: 90%;
 
         i.fa-clock,
         i.fa-user {
@@ -393,8 +394,34 @@ article.homepage-posts {
   }
 }
 
+.share-page {
+    width: 80px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background: white;
+    color: black;
+    margin: 39.6px 0 0 0;
+
+    a {
+        font-weight: 600;
+        color: black;
+        background-repeat: no-repeat;
+        border-radius: 0.2em;
+        box-shadow: 1px 1px 1px 1px lightgray;
+        padding: 3px 4px;
+        margin-bottom: 6px;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
 h2.post-title {
   margin-top: 1.2em;
+  width: 90%;
 }
 
 span.reading-time {
