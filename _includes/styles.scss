@@ -29,18 +29,18 @@ article {
 }
 
 header {
-  margin-top: 20px;
-  margin-bottom: 0.6em;
+  margin-top: 1.8em;
+  margin-bottom: 1em;
   display: flex;
   justify-content: space-between;
-  div.nav-brand {
-    width: 12%;
-    & a {
+  align-items: baseline;
+  div.page-links {
+    & a:first-child {
       font-family: 'Crimson Text', serif;
-      letter-spacing: -2px;
+      letter-spacing: -1.5px;
       opacity: 0.8;
       font-style: italic;
-      font-weight: 600;
+      font-weight: 400;
       background-repeat: no-repeat;
       font-size: 1.4em;
       text-shadow: 1px 1px 1px whitesmoke;
@@ -48,21 +48,23 @@ header {
         opacity: 0.5;
       }
     }
+    & a {
+      background-repeat: no-repeat;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
-  div.header-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-      & a.page-link {
-        background-repeat: no-repeat;
+  div.breadcrumb-trail {
+    a {
+      background-repeat: no-repeat;
+      &:hover {
+        opacity: 0.5;
       }
-      & span.breadcrumb-active {
-        color: rgb(69, 149, 180);
-      }
-      & a:hover {
-        opacity: 0.6;
-      }
+    }
+    span.breadcrumb-active {
+      opacity: 0.85;
+    }
   }
 }
 
@@ -383,7 +385,7 @@ article.homepage-posts {
 }
 
 h2.post-title {
-  margin-top: 1.6em;
+  margin-top: 1.2em;
 }
 
 span.reading-time {

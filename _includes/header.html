@@ -1,15 +1,11 @@
 <header>
-  <div class="nav-brand">
+  <div class="page-links">
     <a href="{{ site.baseurl }}/">{{ site.title }}.</a> |
+    <a class="page-link" href="{{ site.baseurl }}/about/">About</a> • 
+    <a class="page-link" href="{{ site.baseurl }}/contact/">Contact</a>
   </div>
-  <div class="header-links">
-    <div class="page-links">
-      <a class="page-link" href="{{ site.baseurl }}/about/">About</a> • 
-      <a class="page-link" href="{{ site.baseurl }}/contact/">Contact</a>
-    </div>
-    <div class="breadcrumb-trail">
-      {% include breadcrumbs.html %}
-    </div>
+  <div class="breadcrumb-trail">
+    {% include breadcrumbs.html %}
   </div>
 </header>
 <hr class="header-separator">
