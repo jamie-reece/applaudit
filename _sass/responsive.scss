@@ -114,3 +114,140 @@
   }
 
 }
+
+@media only screen and (max-width: 450px) {
+
+  div.page-wrapper {
+
+    flex-direction: row-reverse;
+
+    div#side-nav-container {
+      
+        width: 40px;
+        box-shadow: none;
+
+        nav#side-nav {
+
+          ul:first-child {
+            display: none;
+          }
+
+          ul.nav-items-list {
+
+            li#nav-item {
+              height: 40px;
+              border: none;
+
+              a#menu-trigger {
+                box-sizing: content-box;
+                border: 1px solid whitesmoke;
+                border-radius: 0.25em;
+                margin: 0.4em 0 0 -0.5em;
+                box-shadow: 0px 0px 1px 1px #fffffd;
+
+                &:hover {
+                box-shadow: inset 0px 0px 1px 1px #whitesmoke;
+                }
+
+                i {
+                  transform: scale(0.8) rotate(180deg);
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+        &.is-collapsed {
+          width: 40px;
+          box-shadow: none;
+          
+        }
+
+        &.is-expanded {
+          width: 200px;
+          box-shadow: 0px 0px 1px 1px whitesmoke;
+
+          nav#side-nav {
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+
+            ul.nav-items-list {
+              
+              li#nav-item {
+                margin-bottom: 0.2em;
+                font-size: 0.9em;
+
+                &.active {
+                  opacity: 0.5;
+                }
+
+                a {
+                  justify-content: flex-start;
+                  padding-left: 1em;
+
+                  &#menu-trigger {
+                    margin: 0.2em 0 0 0.2em;
+                  }
+
+                }
+
+              }
+
+            }
+            
+            ul:first-child {
+              display: flex;
+              margin-top: 0.6em;
+            }
+            
+          }
+        }
+
+      }
+
+    div#page-content-container {
+      margin-left: 0;
+
+      div#page-col-one {
+        width: 100%;
+        padding: 0 1.8em;
+
+        header {
+          flex-direction: column;
+
+          div.page-links {
+            margin-bottom: 0.2em;
+          }
+
+        }
+
+        div.post-meta {
+          width: 100%;
+        }
+
+        div.share-page {
+          width: 30px;
+          text-align: center;
+          margin-left: 1em;
+
+          span {
+            display: none;
+          }
+
+        }
+
+      }
+
+      div#page-col-two {
+        display: none;
+      }
+
+    }
+
+  }
+
+}

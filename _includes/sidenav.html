@@ -1,11 +1,17 @@
 <nav id="side-nav">
   <ul class="nav-items-list">
-    <li id="nav-item"><a href="{{ site.baseurl }}/"><i class="fas fa-home"></i></a></li>
+    <li id="nav-item">
+      <a href="{{ site.baseurl }}/">
+        <span class="nav-item-descriptor">Home</span>
+        <i class="fas fa-home"></i>
+      </a>
+    </li>
     {% assign pages = site.pages | sort:"navigation_weight" %}
     {% for page in pages %}
       {% if page.navigation_weight %}
       <li id="nav-item">
           <a href="{{ site.baseurl }}/{{ page.title | downcase }}/">
+            <span class="nav-item-descriptor">{{ page.title }}</span>
             <i class="{{ page.icon }}"></i>
           </a>
         </li>
@@ -13,6 +19,6 @@
     {% endfor %}
   </ul>
   <ul class="nav-items-list">
-    <li id="nav-item"><a href="#"><i class="fas fa-chevron-circle-right"></i></a></li>
+    <li id="nav-item"><a id="menu-trigger" href="#"><i class="fas fa-chevron-right"></i></a></li>
   </ul>
 </nav>
