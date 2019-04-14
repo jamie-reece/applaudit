@@ -3,7 +3,7 @@
     <li id="nav-item">
       <a href="{{ site.baseurl }}/">
         <span class="nav-item-descriptor">Home</span>
-        <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/svg/home.svg">
+        <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/cap.png">
       </a>
     </li>
     {% assign pages = site.pages | sort:"navigation_weight" %}
@@ -13,7 +13,7 @@
           <a href="{{ site.baseurl }}/{{ page.title | downcase }}/">
             <span class="nav-item-descriptor">{{ page.title }}</span>
             <!-- <i class="{{ site.baseurl }}/assets/icons/{{ page.icon }}"></i> -->
-            <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/svg/{{ page.icon }}">
+            <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/{{ page.icon }}.png">
           </a>
         </li>
       {% endif %}
@@ -22,9 +22,9 @@
   <ul class="nav-items-list menu-trigger">
     <li id="nav-item">
       <a id="menu-trigger">
-        <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/svg/chevron-right.svg">
-        <img class="nav-icon is-responsive-closed" src="{{ site.baseurl }}/assets/icons/svg/menu.svg">
-        <img class="nav-icon is-responsive-open" src="{{ site.baseurl }}/assets/icons/svg/x.svg">
+        <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/next-page.png">
+        <img class="nav-icon is-responsive-closed" src="{{ site.baseurl }}/assets/icons/menu-button.png">
+        <img class="nav-icon is-responsive-open" src="{{ site.baseurl }}/assets/icons/error.png">
       </a>
     </li>
   </ul>
