@@ -6,4 +6,4 @@ permalink: /other/contact/
 icon: "envelope-open.svg"
 ---
 
-<p>You can contact me at jamiereecebowman@gmail.com</p>
+You can contact me at [jamiereecebowman@gmail.com](mailto:jamiereecebowman@gmail.com)
