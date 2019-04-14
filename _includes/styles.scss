@@ -167,6 +167,15 @@ div.page-wrapper {
         justify-content: space-around;
         position: sticky;
 
+        &.menu-trigger {
+
+          img.nav-icon:nth-child(2),
+          img.nav-icon:nth-child(3) {
+            display: none;
+          }
+
+        }
+
         li#nav-item {
           padding: 0;
           width: 100%;
