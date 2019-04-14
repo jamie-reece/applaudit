@@ -18,13 +18,15 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 - [X] ~~fix blank nav links~~ `25/03/2019` solved by above
 - [X] ~~add thumbnail images to post preview(?)~~ `24/03/2019`
 - [X] ~~add tags to post preview~~ `24/03/2019`
-- [X] add labelling method to side navigation
+- [X] ~~add labelling method to side navigation~~ `11/04/2019`
 - [ ] find a better way to store book metadata i.e. not as YAML frontmatter
 - [X] ~~add breadcrumbs beneath small header nav~~ `01/04/2019` added inline
 - [X] ~~add reading time to post page and post index~~ `01/04/2019` see [solution](https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/)
 - [X] ~~truncate post preview~~ `06/04/2019` see [liquid filter](https://shopify.github.io/liquid/filters/truncate/)
 - [X] collapse side-nav on smaller screen widths
 - [X] add social icons
+- [ ] remove breadcrumbs on smaller screens
+- [ ] make header and footer full-width i.e. outside of first-col
 
 ## License
 
