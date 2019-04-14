@@ -3,7 +3,7 @@
     <li id="nav-item">
       <a href="{{ site.baseurl }}/">
         <span class="nav-item-descriptor">Home</span>
-        <i class="fas fa-home"></i>
+        <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/svg/home.svg">
       </a>
     </li>
     {% assign pages = site.pages | sort:"navigation_weight" %}
@@ -12,13 +12,14 @@
       <li id="nav-item">
           <a href="{{ site.baseurl }}/{{ page.title | downcase }}/">
             <span class="nav-item-descriptor">{{ page.title }}</span>
-            <i class="{{ page.icon }}"></i>
+            <!-- <i class="{{ site.baseurl }}/assets/icons/{{ page.icon }}"></i> -->
+            <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/svg/{{ page.icon }}">
           </a>
         </li>
       {% endif %}
     {% endfor %}
   </ul>
   <ul class="nav-items-list">
-    <li id="nav-item"><a id="menu-trigger" href="#"><i class="fas fa-chevron-right"></i></a></li>
+    <li id="nav-item"><a id="menu-trigger" href="#"><img class="nav-icon" src="{{ site.baseurl }}/assets/icons/svg/chevron-right.svg"></a></li>
   </ul>
 </nav>

@@ -180,7 +180,15 @@ div.page-wrapper {
           }
 
           &.active {
-            background-color: #ffffff;
+            background-color: whitesmoke;
+
+            & img.nav-icon {
+              opacity: 1;
+            }
+
+            span.nav-item-descriptor {
+              opacity: 1;
+            }
 
             a {
               cursor: default;
@@ -205,8 +213,10 @@ div.page-wrapper {
             span.nav-item-descriptor {
               display: none;
               font-weight: 600;
-              text-shadow: 1px 1px 1px whitesmoke;
-              margin-right: 0.3em;
+              font-size: 0.9em;
+              text-shadow: 1px 1px 3px whitesmoke;
+              margin-right: 0.4em;
+              letter-spacing: -1px;
             }
 
             i.far,
@@ -214,6 +224,12 @@ div.page-wrapper {
               float: left;
               font-size: 1.1em;
               opacity: 0.8;
+            }
+
+            img.nav-icon {
+              width: 20px;
+              height: auto;
+              opacity: 0.75;
             }
 
           }
@@ -332,7 +348,7 @@ div.page-wrapper {
       height: 100%;
       padding: 0 1.5em;
       box-shadow: inset 0px -5px 4px 1px #f4f4ef;
-      background-color: #ffffff;
+      background-color: whitesmoke;
       position: fixed;
       left: 100%;
       transform: translateX(-100%);
