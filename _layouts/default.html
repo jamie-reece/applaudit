@@ -3,16 +3,21 @@
 {% include head.html %}
 
 <body>
+  
   <div class="page-wrapper">
+    
     <div id="side-nav-container" class="is-collapsed">
+      
       {% include sidenav.html %}
+    
     </div>
+
+    <!-- contains breadcrumbs.html within -->
+    {% include header.html %}
+    
     <div id="page-content-container">
 
       <div id="page-col-one">
-
-        {% include header.html %}
-        <!-- contains breadcrumbs.html within -->
 
         {{ content }}
 
@@ -28,10 +33,11 @@
       </div>
 
     </div>
+  
   </div>
 
-  {% include footer.html %}
   <!-- currently blank (may get scrapped) -->
+  {% include footer.html %}
 
   {% include scripts.html %}
 

@@ -8,7 +8,9 @@ $grey-color: #828282;
 
 // @import 'syntax-highlighting';
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -28,12 +30,14 @@ article {
   padding: 0.4rem 0;
 }
 
-header {
-  margin-top: 1.8em;
-  margin-bottom: 1em;
+header.main-header {
+  width: 60%;
+  margin-left: 84px;
+  padding: 1.5em 2.5em 1em 2.5em;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
   div.page-links {
     & a:first-child {
       font-family: 'Crimson Text', serif;
@@ -44,24 +48,30 @@ header {
       background-repeat: no-repeat;
       font-size: 1.4em;
       text-shadow: 1px 1px 1px whitesmoke;
+
       &:hover {
         opacity: 0.5;
       }
     }
+
     & a {
       background-repeat: no-repeat;
+
       &:hover {
         opacity: 0.5;
       }
     }
   }
+
   div.breadcrumb-trail {
     a {
       background-repeat: no-repeat;
+
       &:hover {
         opacity: 0.5;
       }
     }
+
     span.breadcrumb-active {
       opacity: 0.85;
     }
@@ -70,9 +80,9 @@ header {
 
 hr.header-separator {
   border-color: rgba(252, 252, 252, 0.1);
-  width: 100%;
+  width: 55.5%;
   vertical-align: left;
-  margin: 0;
+  margin: 0 0 0 118px;
 }
 
 .post-meta {
@@ -115,8 +125,9 @@ main {
 
   article {
     width: 100%;
-    
-    h1.site-title, h1.page-heading {
+
+    h1.site-title,
+    h1.page-heading {
       font-family: 'Crimson Text', cursive;
       opacity: 0.8;
       letter-spacing: -2.5px;
@@ -124,6 +135,7 @@ main {
       font-weight: 600;
       text-shadow: 1px 1px 1px whitesmoke;
     }
+
     h3.sitetitle-sub {
       margin: 1em 0 0.5em 0;
       padding-right: 1em;
@@ -141,9 +153,11 @@ main {
 }
 
 div.page-wrapper {
-  display: flex;
+  display:flex;
+  flex-wrap: wrap;
 
-  div#side-nav-container, div#side-nav-container.is-collapsed {
+  div#side-nav-container,
+  div#side-nav-container.is-collapsed {
     width: 84px;
     height: 100%;
     position: fixed;
@@ -156,7 +170,7 @@ div.page-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-  
+
       ul.nav-items-list {
         list-style-type: none;
         padding: 0;
@@ -236,13 +250,13 @@ div.page-wrapper {
             }
 
             img.nav-icon {
-              width: 20px;
+              width: 25px;
               height: auto;
               opacity: 0.75;
             }
 
           }
-          
+
         }
 
       }
@@ -274,7 +288,7 @@ div.page-wrapper {
             &#menu-trigger {
               transform: rotate(180deg);
               flex-direction: row-reverse;
-              padding-left: 1em;
+              padding-right: 0.75em;
             }
 
           }
@@ -282,7 +296,7 @@ div.page-wrapper {
         }
 
       }
-      
+
     }
 
     a {
@@ -293,7 +307,8 @@ div.page-wrapper {
 
   div#page-content-container {
     margin-left: 84px;
-    width: 100%;
+    width: 60%;
+    padding-left: 2.5em;
     display: flex;
 
     &.has-overlay {
@@ -302,11 +317,9 @@ div.page-wrapper {
     }
 
     div#page-col-one {
-      width: 64%;
-      padding: 0 2.5em;
 
       .post-meta {
-        width: 90%;
+        width: 100%;
 
         i.fa-clock,
         i.fa-user {
@@ -359,6 +372,7 @@ div.page-wrapper {
       box-shadow: inset 0px -5px 4px 1px #f4f4ef;
       background-color: whitesmoke;
       position: fixed;
+      top: 0%;
       left: 100%;
       transform: translateX(-100%);
 
@@ -436,8 +450,10 @@ article.homepage-posts {
   div.post-preview-content {
     width: 80%;
 
-    header {
-      margin-top: 2em;
+    header.post-title {
+      margin: 2em 0 0 0;
+      padding: 0;
+
       h2 {
         margin-top: 0;
       }
@@ -493,34 +509,9 @@ article.homepage-posts {
   }
 }
 
-.share-page {
-    width: 80px;
-    float: right;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    background: white;
-    color: black;
-    margin: 39.6px 0 0 0;
-
-    a {
-        font-weight: 600;
-        color: black;
-        background-repeat: no-repeat;
-        border-radius: 0.2em;
-        box-shadow: 1px 1px 1px 1px lightgray;
-        padding: 3px 4px;
-        margin-bottom: 6px;
-
-        &:hover {
-            opacity: 0.5;
-        }
-    }
-}
-
 h2.post-title {
   margin-top: 1.2em;
-  width: 90%;
+  width: 100%;
 }
 
 span.reading-time {
