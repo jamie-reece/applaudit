@@ -20,6 +20,12 @@
     {% endfor %}
   </ul>
   <ul class="nav-items-list">
-    <li id="nav-item"><a id="menu-trigger" href="#"><img class="nav-icon" src="{{ site.baseurl }}/assets/icons/svg/chevron-right.svg"></a></li>
+    <li id="nav-item">
+      <a id="menu-trigger" href="#">
+        <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/svg/chevron-right.svg">
+        <img class="nav-icon is-responsive-closed" src="{{ site.baseurl }}/assets/icons/svg/menu.svg">
+        <img class="nav-icon is-responsive-open" src="{{ site.baseurl }}/assets/icons/svg/x.svg">
+      </a>
+    </li>
   </ul>
 </nav>

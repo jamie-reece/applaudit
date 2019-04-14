@@ -149,10 +149,16 @@
                 box-shadow: inset 0px 0px 1px 1px #whitesmoke;
                 }
 
-                i {
-                  transform: scale(0.8) rotate(180deg);
-                }
+                img.nav-icon {
+                  display: none;
+                  transform: scale(0.7) rotate(180deg);
 
+                  &.is-responsive-closed {
+                    display: block;
+                  }
+
+                }
+              
               }
 
             }
@@ -187,7 +193,7 @@
 
                 a {
                   justify-content: flex-start;
-                  padding-left: 1em;
+                  padding-left: 1.2em;
 
                   &#menu-trigger {
                     margin: 0.2em 0 0 0.2em;

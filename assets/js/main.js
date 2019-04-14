@@ -13,5 +13,7 @@ $(function toggleSidenav() {
   $('a#menu-trigger').click(function() {
     $('div#side-nav-container').toggleClass('is-expanded');
     $('div#page-content-container').toggleClass('has-overlay');
+    $('img.nav-icon:nth-child(2)').toggleClass('is-responsive-closed');
+    $('img.nav-icon:last-child').toggleClass('is-responsive-closed');
   });
 });
