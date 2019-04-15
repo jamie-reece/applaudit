@@ -2,9 +2,15 @@
 
   div.page-wrapper {
 
+    header.main-header {
+      width: 100%;
+    }
+
     div#page-content-container {
 
-      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      padding-right: 2.5em;
 
       div#page-col-one {
         width: 100%;
@@ -37,12 +43,10 @@
 
       div#page-col-two {
         width: 100%;
+        height: 25%;
         padding: 2em 2.5em;
+        background-color: whitesmoke;
         position: relative;
-        background-color: white;
-        box-shadow: none;
-        display: flex;
-        border-top: 1px solid whitesmoke;
 
         div.book-meta {
           margin-top: 0;
@@ -78,7 +82,7 @@
 
         article {
           padding-bottom: 0.8em;
-          flex-direction: row-reverse;
+          flex-direction: column-reverse;
 
           p {
             width: 100%;
@@ -108,11 +112,8 @@
 
       }
 
-      div#page-col-two {
-        display: none;
-      }
-
     }
+    
   }
 
 }
@@ -122,6 +123,23 @@
   div.page-wrapper {
 
     flex-direction: row-reverse;
+
+    header {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      padding: 1.5em 1.8em 1.2em 1.8em;
+
+      div.page-links {
+        margin-bottom: 0.2em;
+      }
+
+    }
+    
+    hr.header-separator {
+      width: 100%;
+      margin: 0 0 0 1.8em;
+    }
 
     blockquote {
       margin: 0;
@@ -227,6 +245,8 @@
 
     div#page-content-container {
       margin-left: 0;
+      width: 100%;
+      padding: 0;
 
       div#page-col-one {
         width: 100%;
@@ -245,15 +265,6 @@
             }
 
           }
-
-        header {
-          flex-direction: column;
-
-          div.page-links {
-            margin-bottom: 0.2em;
-          }
-
-        }
 
         div.post-meta {
           width: 100%;

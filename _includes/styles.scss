@@ -148,7 +148,7 @@ main {
     border-color: rgba(252, 252, 252, 0.2);
     width: 100%;
     vertical-align: left;
-    margin: 0;
+    padding: 0 2.5em 0 0;
   }
 }
 
@@ -288,7 +288,7 @@ div.page-wrapper {
             &#menu-trigger {
               transform: rotate(180deg);
               flex-direction: row-reverse;
-              padding-right: 0.75em;
+              padding-left: 0.75em;
             }
 
           }
