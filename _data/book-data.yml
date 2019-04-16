@@ -1,0 +1,13 @@
+- name: johnson-everything-under
+  title: Everything Under
+  author: Daisy Johnson
+  publisher: Faber & Faber
+  pub-date: 12/12/2012
+  extents: pp.121
+
+- name: johnson-train-dreams
+  title: Train Dreams
+  author: Denis Johsnon
+  publisher: Granta
+  pub-date: 01/01/2001
+  extents: pp.189
