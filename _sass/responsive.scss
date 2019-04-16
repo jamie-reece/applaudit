@@ -43,7 +43,9 @@
 
       div#page-col-two {
         width: 100%;
+        // height: 250px; // temporary hard-coded height for design purposes
         padding: 2em 2.5em;
+        margin-top: 1em;
         background-color: whitesmoke;
         z-index: -1;
         position: inherit;
@@ -54,7 +56,7 @@
 
         div.book-meta {
           margin-top: 0;
-          width: 40%;
+          width: 50%;
 
           div.book-thumbnail {
 
@@ -117,7 +119,7 @@
       }
 
     }
-    
+
   }
 
 }
@@ -143,7 +145,7 @@
       }
 
     }
-    
+
     hr.header-separator {
       width: 100%;
       margin: 0 0 0 1.8em;
@@ -154,104 +156,104 @@
     }
 
     div#side-nav-container {
-      
+
+      width: 40px;
+      box-shadow: none;
+
+      nav#side-nav {
+
+        ul:first-child {
+          display: none;
+        }
+
+        ul.nav-items-list {
+
+          li#nav-item {
+            height: 40px;
+            border: none;
+
+            a#menu-trigger {
+              box-sizing: content-box;
+              background-color: #fff;
+              border: 1px solid whitesmoke;
+              border-radius: 0.25em;
+              margin: 0.4em 0 0 -0.5em;
+              box-shadow: 0px 0px 1px 1px #fffffd;
+              z-index: 1;
+
+              &:hover {
+                box-shadow: inset 0px 0px 1px 1px whitesmoke;
+              }
+
+              img.nav-icon {
+                display: none;
+                transform: scale(0.7) rotate(180deg);
+
+                &.is-responsive-closed {
+                  display: block;
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      &.is-collapsed {
         width: 40px;
         box-shadow: none;
 
-        nav#side-nav {
+      }
 
-          ul:first-child {
-            display: none;
-          }
+      &.is-expanded {
+        width: 200px;
+        box-shadow: 0px 0px 1px 1px whitesmoke;
+
+        nav#side-nav {
+          flex-direction: column-reverse;
+          justify-content: flex-end;
 
           ul.nav-items-list {
 
             li#nav-item {
-              height: 40px;
-              border: none;
+              margin-bottom: 0.2em;
+              font-size: 0.9em;
 
-              a#menu-trigger {
-                box-sizing: content-box;
-                background-color: #fff;
-                border: 1px solid whitesmoke;
-                border-radius: 0.25em;
-                margin: 0.4em 0 0 -0.5em;
-                box-shadow: 0px 0px 1px 1px #fffffd;
-                z-index: 1;
+              &.active {
+                opacity: 0.5;
+              }
 
-                &:hover {
-                box-shadow: inset 0px 0px 1px 1px whitesmoke;
+              a {
+                justify-content: flex-start;
+                padding-left: 1.2em;
+
+                &#menu-trigger {
+                  margin: 0.2em 0 0 0.2em;
                 }
 
                 img.nav-icon {
-                  display: none;
-                  transform: scale(0.7) rotate(180deg);
-
-                  &.is-responsive-closed {
-                    display: block;
-                  }
-
+                  transform: scale(0.8);
                 }
-              
+
               }
 
             }
 
           }
 
-        }
-
-        &.is-collapsed {
-          width: 40px;
-          box-shadow: none;
-          
-        }
-
-        &.is-expanded {
-          width: 200px;
-          box-shadow: 0px 0px 1px 1px whitesmoke;
-
-          nav#side-nav {
-            flex-direction: column-reverse;
-            justify-content: flex-end;
-
-            ul.nav-items-list {
-              
-              li#nav-item {
-                margin-bottom: 0.2em;
-                font-size: 0.9em;
-
-                &.active {
-                  opacity: 0.5;
-                }
-
-                a {
-                  justify-content: flex-start;
-                  padding-left: 1.2em;
-
-                  &#menu-trigger {
-                    margin: 0.2em 0 0 0.2em;
-                  }
-
-                  img.nav-icon {
-                    transform: scale(0.8);
-                  }
-
-                }
-
-              }
-
-            }
-            
-            ul:first-child {
-              display: flex;
-              margin-top: 0.6em;
-            }
-            
+          ul:first-child {
+            display: flex;
+            margin-top: 0.6em;
           }
-        }
 
+        }
       }
+
+    }
 
     div#page-content-container {
       margin-left: 0;
@@ -285,27 +287,29 @@
 
           }
 
-        div.post-meta {
-          width: 100%;
-        }
-
-        div.share-page {
-          width: 30px;
-          text-align: center;
-          margin-left: 1em;
-
-          span {
-            display: none;
+          div.post-meta {
+            width: 100%;
           }
 
         }
 
       }
 
-    }
+      div#page-col-two {
+        margin-left: 1.8em;
+
+        div.book-meta {
+          width: 100%;
+        }
+
+      }
 
     }
 
+  }
+
+  footer.site-footer {
+    margin: 0;
   }
 
 }

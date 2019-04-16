@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-reverse
 ---
 
 <article>
@@ -9,24 +9,34 @@ layout: default
   </h2>
 
   <div class="post-meta">
-      <time datetime="{{ page.date | date_to_long_string }}">
-        <i class="fas fa-clock"></i>{{ page.date | date_to_long_string }} 
-      </time>
-      <span>•</span> 
-      <span><i class="fas fa-user"></i>{{ page.author }}</span>
-      <span>•</span>
-      <span class="reading-time"><i class="fas fa-hourglass-half"></i>{% include reading-time.html %}</span>
-      <div class="post-tags">
-        <ul>
-          {% for tag in page.tags %}
-          <li class="post-tag"><i class="fas fa-tag"></i>{{ tag | capitalize }}</li>
-          {% endfor %}
-        </ul>
-      </div>
+    <time datetime="{{ page.date | date_to_long_string }}">
+      <i class="fas fa-clock"></i>
+      {{ page.date | date_to_long_string }}
+    </time>
+    <span>•</span>
+    <span>
+      <i class="fas fa-user"></i>
+      {{ page.author }}
+    </span>
+    <span>•</span>
+    <span class="reading-time"><i class="fas fa-hourglass-half"></i>{% include reading-time.html %}</span>
+    <div class="post-tags">
+      <ul>
+
+        {% for tag in page.tags %}
+
+        <li class="post-tag"><i class="fas fa-tag"></i>{{ tag | capitalize }}</li>
+
+        {% endfor %}
+
+      </ul>
     </div>
+  </div>
 
   <section>
+
     {{content}}
+
   </section>
 
 </article>

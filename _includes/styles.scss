@@ -307,6 +307,7 @@ div.page-wrapper {
 
   div#page-content-container {
     margin-left: 84px;
+    height: 100%;
     width: 60%;
     padding-left: 2.5em;
     display: flex;
@@ -524,12 +525,8 @@ span.reading-time {
 
 footer.site-footer {
   width: 100%;
-  margin-left: 84px;
+  margin: 1em 0 1em 84px;
   padding-left: 2.5em;
-
-  section.copyright {
-  }
-
 }
 
 @import 'responsive';
