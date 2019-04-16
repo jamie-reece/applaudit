@@ -210,7 +210,7 @@ div.fullwidth, table.fullwidth { width: 100%; }
 div.table-wrapper { overflow-x: auto;
                     font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif; }
 
-@media screen and (max-width: 760px) { p, h1, h2, h3, footer { width: 90%; }
+@media screen and (max-width: 760px) { p, h1, h2, h3, footer { width: 100%; }
                                        pre.code { width: 87.5%; }
                                        ul { width: 85%; }
                                        figure { max-width: 90%; }

@@ -524,11 +524,12 @@ span.reading-time {
 
 footer.site-footer {
   width: 100%;
+  margin-left: 84px;
+  padding-left: 2.5em;
 
   section.copyright {
-    float: left;
-    padding-left: 8.4em;
   }
+
 }
 
 @import 'responsive';
