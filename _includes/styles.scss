@@ -4,7 +4,7 @@ $grey-color: #828282;
 
 @import 'tufte';
 
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:600i');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400i');
 
 // @import 'syntax-highlighting';
 
@@ -40,13 +40,11 @@ header.main-header {
 
   div.page-links {
     & a:first-child {
-      font-family: 'Crimson Text', serif;
+      font-family: 'Libre Baskerville', serif;
       letter-spacing: -1.5px;
-      opacity: 0.8;
       font-style: italic;
-      font-weight: 400;
       background-repeat: no-repeat;
-      font-size: 1.4em;
+      font-size: 1.1em;
       text-shadow: 1px 1px 1px whitesmoke;
 
       &:hover {
@@ -128,11 +126,8 @@ main {
 
     h1.site-title,
     h1.page-heading {
-      font-family: 'Crimson Text', cursive;
-      opacity: 0.8;
-      letter-spacing: -2.5px;
-      font-style: italic;
-      font-weight: 600;
+      font-family: 'Libre Baskerville', serif;
+      letter-spacing: -2.8px;
       text-shadow: 1px 1px 1px whitesmoke;
     }
 
