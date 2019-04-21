@@ -140,10 +140,10 @@ main {
 
 
   hr {
+    display: block;
     border-color: rgba(252, 252, 252, 0.2);
-    width: 100%;
-    vertical-align: left;
-    padding: 0 2.5em 0 0;
+    width: 96%;
+    margin: 0;
   }
 }
 
@@ -304,7 +304,6 @@ div.page-wrapper {
     margin-left: 84px;
     height: 100%;
     width: 60%;
-    padding-left: 2.5em;
     display: flex;
 
     &.has-overlay {
@@ -313,6 +312,7 @@ div.page-wrapper {
     }
 
     div#page-col-one {
+      padding-left: 2.5em;
 
       .post-meta {
         width: 100%;
