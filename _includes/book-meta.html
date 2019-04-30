@@ -1,0 +1,17 @@
+<div class="book-meta">
+  {% if page.category == "reviews" %}
+  <div class="book-thumbnail">
+    <img class="post-thumbnail-lg" src="{{ site.baseurl }}/assets/images/{{ page.thumbnail }}" alt="{{ page.thumbnail }}">
+  </div>
+  {% assign book = site.data.book-data | where: 'name', include.name | first %}
+  <div class="book-details">
+    <ul class="book-meta-list">
+      <li class="book-meta-item"><p><a href="#">{{ book.author }}</a></p></li>
+      <li class="book-meta-item"><p><em>{{ book.title }}</em></p></li>
+      <li class="book-meta-item"><p>{{ book.publisher }}</p></li>
+      <li class="book-meta-item"><p>{{ book.pub-date }}</p></li>
+      <li class="book-meta-item"><p>{{ book.extents }}</p></li>
+    </ul>
+  </div>
+  {% endif %}
+</div>

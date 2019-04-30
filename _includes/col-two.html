@@ -1,17 +1,4 @@
-<div class="book-meta">
-  {% if page.category == "reviews" %}
-  <div class="book-thumbnail">
-    <img class="post-thumbnail-lg" src="{{ site.baseurl }}/assets/images/{{ page.thumbnail }}" alt="{{ page.thumbnail }}">
-  </div>
-  {% for book in site.data.book-data %}
-  <div class="book-details">
-    <ul class="book-meta-list">
-      <li class="book-meta-item"><p><a href="#">{{ book.author }}</a></p></li>
-      <li class="book-meta-item"><p><em>{{ book.title }}</em></p></li>
-      <li class="book-meta-item"><p>{{ book.publisher }}</p></li>
-      <li class="book-meta-item"><p>{{ book.pub-date }}</p></li>
-    </ul>
-  </div>
-  {% endfor %}
-  {% endif %}
-</div>
+<!-- book-meta block w/ author info &c. -->
+
+{% assign pageref = page.permalink | split: '/' | last %}
+{% include book-meta.html name =  pageref %}
