@@ -1,20 +1,39 @@
-- name: johnson-everything-under
-  title: Everything Under
-  author: Daisy Johnson
+- name: cusk-outline
+  title: Outline
+  author: Rachel Cusk
+  thumbnail: cusk-outline.jpg
   publisher: Faber & Faber
-  pub-date: 7th Feb., 2019
-  extents: 272pp.
-
-- name: johnson-train-dreams
-  title: Train Dreams
-  author: Denis Johsnon
-  publisher: Granta
-  pub-date: 4th Jul., 2013
-  extents: 128pp.
+  pub-date: 3rd May, 2018
+  extents: 256pp.
 
 - name: black-prague-nights
   title: Prague Nights
   author: Benjamin Black
+  thumbnail: black-prague-nights.jpg
   publisher: Viking
   pub-date: 1st Jun., 2017
   extents: 366pp.
+
+- name: johnson-train-dreams
+  title: Train Dreams
+  author: Denis Johsnon
+  thumbnail: johnson-train-dreams.jpg
+  publisher: Granta
+  pub-date: 4th Jul., 2013
+  extents: 128pp.
+
+- name: johnson-everything-under
+  title: Everything Under
+  author: Daisy Johnson
+  thumbnail: johnson-everything-under.jpg
+  publisher: Faber & Faber
+  pub-date: 7th Feb., 2019
+  extents: 272pp.
+
+- name: d'arcy-waiting-for-the-bullet
+  title: Waiting for the Bullet
+  author: Madeleine D’Arcy
+  thumbnail: d'arcy-waiting-for-the-bullet.jpg
+  publisher: Doire Press
+  pub-date: 26th Mar., 2014
+  extents: 152pp.

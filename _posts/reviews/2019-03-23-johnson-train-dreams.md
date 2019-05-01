@@ -6,13 +6,6 @@ category: reviews
 tags: [fiction, American, trilogy, Granta, short]
 permalink: ":categories/johnson-train-dreams/"
 thumbnail: "johnson-train-dreams.jpg"
-meta-one: "Granta"
-meta-two: "September 1st, 2016"
-meta-three: "320pp."
-meta-four: "London, England"
-meta-five: ""
-meta-six: "Denis Johnson"
-meta-seven: "Train Dreams"
 ---
 
 Velit Lorem laboris reprehenderit anim cillum fugiat exercitation anim dolor. Sint est et cillum cupidatat deserunt mollit ad ut occaecat. Officia laboris anim esse ullamco ea ipsum ea eiusmod pariatur. Labore deserunt fugiat irure sint ex sint nisi non dolore enim nostrud. Do in ea sunt irure ea consequat dolor duis et exercitation. Elit est ea non ea mollit laborum minim proident ipsum incididunt.

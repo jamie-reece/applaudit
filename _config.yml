@@ -3,7 +3,7 @@ description: >
   Book reviews and writing.
 baseurl: "/glossd"
 url: "https://jamie-reece.github.io"
-paginate:	3 # The number of posts to show per page on your homepage
+paginate: 10 # The number of posts to show per page on your homepage
 name: "Jamie Bowman"
 markdown: kramdown
 permalink: none

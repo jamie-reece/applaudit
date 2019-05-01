@@ -5,7 +5,7 @@ author: Jamie Bowman
 category: reviews
 tags: [historical, fiction, pseudonym, crime, court, prague, winter]
 permalink: :categories/black-prague-nights/
-thumbnail: "black-prague-nights.jpg" 
+thumbnail: "black-prague-nights.jpg"
 ---
 
 Excepteur et exercitation aliquip amet reprehenderit mollit ex quis consectetur id elit do. Duis qui sit nulla et exercitation fugiat Lorem mollit tempor. Magna veniam ipsum aute nulla eiusmod pariatur. Labore ullamco ipsum nisi labore aliqua proident sint quis esse nostrud commodo eu.

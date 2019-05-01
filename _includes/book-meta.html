@@ -1,9 +1,13 @@
+{% assign book = site.data.book-data | where: 'name', include.name | first %}
 <div class="book-meta">
   {% if page.category == "reviews" %}
   <div class="book-thumbnail">
-    <img class="post-thumbnail-lg" src="{{ site.baseurl }}/assets/images/{{ page.thumbnail }}" alt="{{ page.thumbnail }}">
+    <img
+      class="post-thumbnail-lg"
+      src="{{ book.thumbnail | prepend: '/glossd/assets/images/' }}"
+      alt="{{ book.title }}"
+    />
   </div>
-  {% assign book = site.data.book-data | where: 'name', include.name | first %}
   <div class="book-details">
     <ul class="book-meta-list">
       <li class="book-meta-item"><p><a href="#">{{ book.author }}</a></p></li>
