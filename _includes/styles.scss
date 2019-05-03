@@ -37,6 +37,11 @@ header.main-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+  border-bottom: 1px solid whitesmoke;
 
   div.page-links {
     & a:first-child {

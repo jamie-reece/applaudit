@@ -32,7 +32,7 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 - [ ] paginate posts on homepage to 3
 - [ ] fix header rules so full-width on all screen sizes
 - [ ] look into original sidenote feature for footnote referencing
-- [ ] make header sticky:
+- [X] make header sticky:
 
 ``````css
 position: sticky;
