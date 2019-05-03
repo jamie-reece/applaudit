@@ -32,16 +32,17 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 - [ ] paginate posts on homepage to 3
 - [ ] fix header rules so full-width on all screen sizes
 - [ ] look into original sidenote feature for footnote referencing
-- [X] make header sticky:
+- [X] make header sticky<sup>1</sup>
+- [ ] change z-index of side-nav so overlays header
 
+<sup>1</sup>
 ``````css
 position: sticky;
 top: 0;
 background-color: #fff;
 z-index: 1;
 border-bottom: 1px solid whitesmoke;
-``````````
-- [ ] 
+`````````` 
 
 ## License
 
