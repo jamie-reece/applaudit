@@ -1,4 +1,4 @@
-# Applaudit
+# Gloss’d
 
 Personal blog-style site for posting book reviews.
 
