@@ -26,6 +26,12 @@ Based on [Immaculate template](https://cdn.ampproject.org/c/siawyoung.com/immacu
 - [X] ~~collapse side-nav on smaller screen widths~~ `16/04/2019`
 - [X] ~~remove breadcrumbs on smaller screens~~ `16/04/2019`
 - [X] ~~make header and footer full-width i.e. outside of first-col~~ `16/04/2019`
+- [X] ~~add teaser content to side-col~~ `03/05/2019`
+- [ ] fix side col layout on smaller screen widths
+- [ ] add all posts to `Reviews` page
+- [ ] paginate posts on homepage to 3
+- [ ] fix header rules so full-width on all screen sizes
+- [ ] look into original sidenote feature for footnote referencing
 
 ## License
 
