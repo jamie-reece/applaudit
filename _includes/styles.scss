@@ -133,7 +133,6 @@ main {
 
     h3.sitetitle-sub {
       margin: 1em 0 0.5em 0;
-      padding-right: 1em;
       width: 100%;
     }
   }
@@ -142,7 +141,7 @@ main {
   hr {
     display: block;
     border-color: rgba(252, 252, 252, 0.2);
-    width: 96%;
+    width: 100%;
     margin: 0;
   }
 }
@@ -312,7 +311,7 @@ div.page-wrapper {
     }
 
     div#page-col-one {
-      padding-left: 2.5em;
+      padding: 0 2.5em;
 
       .post-meta {
         width: 100%;
