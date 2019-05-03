@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Madeleine D’arcy – Waiting for the Bullet'
+title: 'Madeleine D’Arcy – Waiting for the Bullet'
 author: Jamie Bowman
 category: reviews
 tags: [debut,Irish,Cork,shorts,London]
