@@ -2,3 +2,7 @@
 
 {% assign pageref = page.permalink | split: '/' | last %}
 {% include book-meta.html name =  pageref %}
+
+<!-- book teaser -->
+
+{% include book-teaser.html name = pageref %}
