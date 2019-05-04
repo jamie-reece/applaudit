@@ -1,8 +1,22 @@
 <!-- book-meta block w/ author info &c. -->
 
 {% assign pageref = page.permalink | split: '/' | last %}
-{% include book-meta.html name =  pageref %}
+  {% if page.layout == 'post' %}
+    {% include book-meta.html name = pageref %}
+  {% endif %}
 
 <!-- book teaser -->
 
-{% include book-teaser.html name = pageref %}
+{% if page.layout == 'post' %}
+  {% include book-teaser.html name = pageref %}
+{% endif %}
+
+<!-- next review to be posted -->
+{% if page.layout != 'post' %}
+  {% include coming-soon.html name = 'coming-soon' %}
+{% endif %}
+
+<!-- next review to be posted -->
+{% if page.layout != 'post' %}
+  {% include featured.html %}
+{% endif %}

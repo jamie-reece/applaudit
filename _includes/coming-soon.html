@@ -1,0 +1,29 @@
+{% assign book = site.data.book-data | where: 'name', include.name | first %}
+<div class="coming-soon">
+  <h3 style=>Coming soon...</h3>
+  <div class="book-meta" style="margin-top: 1em;">
+    <div class="book-thumbnail">
+      <img class="post-thumbnail-lg" src="{{ book.thumbnail | prepend: '/glossd/assets/images/' }}"
+        alt="{{ book.title }}" />
+    </div>
+    <div class="book-details">
+      <ul class="book-meta-list">
+        <li class="book-meta-item">
+          <p><a href="#">{{ book.author }}</a></p>
+        </li>
+        <li class="book-meta-item">
+          <p><em>{{ book.title }}</em></p>
+        </li>
+        <li class="book-meta-item">
+          <p>{{ book.publisher }}</p>
+        </li>
+        <li class="book-meta-item">
+          <p>{{ book.pub-date }}</p>
+        </li>
+        <li class="book-meta-item">
+          <p>{{ book.extents }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
