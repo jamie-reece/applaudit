@@ -35,15 +35,6 @@
   font-style: normal;
 }
 
-/* Skyfonts */
-
-@font-face {
-  font-family: "Libre Baskerville";
-  src: url($baseurl + "/assets/skyfonts/Libre-Baskerville-italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
 /* Tufte CSS styles */
 
 html { font-size: 15px; }
