@@ -1,0 +1,27 @@
+{% assign total_pages = site.posts | size %}
+
+  {% assign count = 0 %}
+
+  {% for post in site.posts %}
+
+    {% assign count = count | plus: 1 %}
+
+      {% if count <= 3 %}
+
+      <div class="group-one">
+    
+        <p>{{ post.title }}</p>
+      
+      </div>
+
+      {% elsif count <= 6 %}
+
+      <div class="group-two" style="border-top: 1px solid gray;">
+      
+        <p>{{ post.title }}</p>
+
+      </div>
+
+      {% endif %}
+
+    {% endfor %}

@@ -533,4 +533,31 @@ footer.site-footer {
   padding-left: 2.5em;
 }
 
+div.pagination {
+  margin-top: 1em;
+  text-align: right;
+  a, em {
+    font-size: 1.3rem;
+  }
+  a {
+    text-decoration: none;
+    background-repeat: no-repeat;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  em {
+    font-size: 1.7rem;
+    color: darkcyan;
+  }
+}
+
+// misc
+
+.post-is-hidden {
+  display: none;
+}
+
+// media queries
+
 @import 'responsive';

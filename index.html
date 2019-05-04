@@ -4,7 +4,7 @@ layout: default
 
 <main>
 
-  <article class="post homepage-title">  
+  <article class="post homepage-title">
     <h1 class="site-title">{{ site.title }}.</h1>
     <h3 class="sitetitle-sub">Latest book reviews:</h3>
   </article>
@@ -12,9 +12,9 @@ layout: default
   <hr class="post-separator">
 
   <div>
-    {% for post in paginator.posts %}
+    {% for post in site.posts limit: 3 %}
     <article class="homepage-posts" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-      
+
       <div class="post-preview-assets">
         <img class="post-thumbnail" src="{{ site.baseurl }}/assets/images/{{ post.thumbnail }}">
       </div>
@@ -25,22 +25,22 @@ layout: default
             <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a>
           </h2>
         </header>
-  
+
         <div class="post-meta">
           <time datetime="{{ post.date | date_to_long_string }}">
-            <i class="fas fa-clock"></i>{{ post.date | date_to_long_string }} 
+            <i class="fas fa-clock"></i>{{ post.date | date_to_long_string }}
           </time>
-          <span>•</span> 
+          <span>•</span>
           <span><i class="fas fa-user"></i>{{ post.author }}</span>
           <span>•</span>
           <span class="reading-time">
-              <i class="fas fa-hourglass-half"></i>
-              {% capture words %}
-                {{ post.content | number_of_words | minus: 180 }}
-              {% endcapture %}
-              {% unless words contains '-' %}
-                {{ words | plus: 150 | divided_by: 150 | append: ' min.' }}
-              {% endunless %}
+            <i class="fas fa-hourglass-half"></i>
+            {% capture words %}
+            {{ post.content | number_of_words | minus: 180 }}
+            {% endcapture %}
+            {% unless words contains '-' %}
+            {{ words | plus: 150 | divided_by: 150 | append: ' min.' }}
+            {% endunless %}
           </span>
           <div class="post-tags">
             <ul>
@@ -64,34 +64,5 @@ layout: default
 
     {% endfor %}
   </div>
-
-  <!-- <nav role="navigation">
-    {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-      {% else %}
-      <span>&laquo;</span>
-      {% endif %}
-
-      {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-      <em>{{ page }}</em>
-      {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-      <a
-        href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-      {% endfor %}
-
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-      {% else %}
-      <span>&raquo;</span>
-      {% endif %}
-    </div>
-    {% endif %}
-  </nav> -->
 
 </main>

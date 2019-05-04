@@ -7,7 +7,7 @@ $(function addActiveCLass() {
   $('li#nav-item a[href="' + basePath + '"]').parent('li').addClass('active');
 });
 
-//
+// sidenav function
 
 $(function toggleSidenav() {
   $('a#menu-trigger').click(function() {
@@ -15,5 +15,13 @@ $(function toggleSidenav() {
     $('div#page-content-container').toggleClass('has-overlay');
     $('img.nav-icon:nth-child(2)').toggleClass('is-responsive-closed');
     $('img.nav-icon:last-child').toggleClass('is-responsive-closed');
+  });
+});
+
+// function to expand posts on /reviews/ page
+
+$(function showMorePosts() {
+  $('button#expand-posts').click(function() {
+  $('div.post-is-hidden').toggleClass('post-is-hidden');
   });
 });
