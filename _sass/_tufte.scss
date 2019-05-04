@@ -35,7 +35,17 @@
   font-style: normal;
 }
 
+/* Skyfonts */
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url($baseurl + "/assets/skyfonts/Libre-Baskerville-italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
 /* Tufte CSS styles */
+
 html { font-size: 15px; }
 
 body { margin-left: auto;
@@ -46,11 +56,16 @@ body { margin-left: auto;
        max-width: 100%;
        counter-reset: sidenote-counter; }
 
-h1 { font-weight: 400;
-     margin-top: 2.5rem;
-     margin-bottom: 1.5rem;
-     font-size: 2.8rem;
-     line-height: 1; }
+h1 { 
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: -1.8px;
+    text-shadow: 1px 1px 1px whitesmoke;
+    font-weight: 400;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.8rem;
+    line-height: 1;
+    font-style: italic; }
 
 h2 { font-style: italic;
      font-weight: 400;

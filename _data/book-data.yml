@@ -1,12 +1,12 @@
 # the page to be featured as an aside on all pages except post pages
 
 - name: coming-soon
-  title: Prague Nights
-  author: Benjamin Black
-  thumbnail: black-prague-nights.jpg
-  publisher: Viking
-  pub-date: 1st Jun., 2017
-  extents: 366pp.
+  title: Murmur
+  author: Will Eaves
+  thumbnail: eaves-murmur.jpg
+  publisher: CB Editions
+  pub-date: 1st Mar., 2018
+  extents: 177pp.
   teaser: "“Dolor eiusmod cupidatat duis qui consectetur. Mollit nulla consectetur id excepteur do. Anim ut dolor quis sit consequat. Mollit laboris proident sunt incididunt mollit consequat officia. Ad deserunt eu veniam qui eiusmod ex proident pariatur tempor mollit laborum enim laboris elit.”"
 
 # all other book data (in reverse chronological order by post date NOT pub date)

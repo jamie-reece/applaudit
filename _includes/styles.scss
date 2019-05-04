@@ -4,8 +4,6 @@ $grey-color: #828282;
 
 @import 'tufte';
 
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400i');
-
 // @import 'syntax-highlighting';
 
 *,
@@ -128,13 +126,6 @@ main {
 
   article {
     width: 100%;
-
-    h1.site-title,
-    h1.page-heading {
-      font-family: 'Libre Baskerville', serif;
-      letter-spacing: -1.8px;
-      text-shadow: 1px 1px 1px whitesmoke;
-    }
 
     h3.sitetitle-sub {
       margin: 1em 0 0.5em 0;
