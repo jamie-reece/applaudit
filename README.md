@@ -47,3 +47,71 @@ border-bottom: 1px solid whitesmoke;
 ## License
 
 MIT
+
+## Config (updated 04/05/2019)
+
+.
+├── Gemfile 
+├── Gemfile.lock
+├── LICENSE
+├── README.md
+├── _config.yml /* main site information/values */
+├── _data
+│   └── book-data.yml /* book metadata displayed on site */
+├── _includes
+│   ├── book-meta.html /* book metadata (aside) */
+│   ├── book-teaser.html /* extract from book (aside) */
+│   ├── breadcrumbs.html /* current page displayed in header */
+│   ├── col-two.html /* side column */
+│   ├── coming-soon.html /* forthcoming review displayed on all pages execept posts (aside) */
+│   ├── featured.html /* placeholder text displayed on all pages except posts (aside) */
+│   ├── footer.html
+│   ├── head.html
+│   ├── header.html
+│   ├── loop-thru-posts.html /* logic to reviews feed (not included anywhere) */
+│   ├── metadata.json
+│   ├── reading-time.html /* 'plugin' to calculate reading time of each post */
+│   ├── scripts.html
+│   ├── sidenav.html /* dynamic sidebar */
+│   └── styles.scss /* custom styles imported into main stylesheet inc. overrides */
+├── _layouts
+│   ├── default-reverse.html /* default with column-reverse to display aside modules at top of page */
+│   ├── default.html /* aside wraps to page bottom */
+│   ├── page.html /* aside wraps to page bottom */
+│   └── post.html /* aside wraps to page bottom */
+├── _pages
+│   ├── about.md
+│   ├── contact.md
+│   ├── more.md
+│   ├── people.md
+│   ├── reviews
+│   │   └── index.html /* nested index page set as paginate_path */
+│   └── tags.md
+├── _plugins
+│   └── shortcodes.rb
+├── _posts
+│   └── reviews
+│       ├── 2019-03-04-cusk-outline.md
+│       ├── 2019-03-05-black-prague-nights.md
+│       ├── 2019-03-23-johnson-train-dreams.md
+│       ├── 2019-03-24-johnson-everything-under.md
+│       └── 2019-05-01-d'arcy-waiting-for-the-bullet.md
+├── _sass
+│   ├── _lean_tufte.scss /* trimmed down version of tufte.scss (not used) */
+│   ├── _syntax-highlighting.scss
+│   ├── _tufte.scss /* default styles */
+│   └── responsive.scss /* media queries imported into main scss file */
+├── _site /* where the site is compiled (contents hidden) */
+├── all-posts.json /* in progress */
+├── assets
+│   ├── css
+│   ├── et-book /* defaultfont files */
+│   ├── icons /* from flaticon (see about page for more) */
+│   ├── images /* naming convention is <author-surname>-<book-title>.jpg */
+│   │   ├── black-prague-nights.jpg /* for example */
+│   └── js
+│       └── main.js /* contains the few scripts used on site */
+├── feed.xml /* inherited from forked template (untested) */
+├── index.html
+
+41 directories, 137 files
