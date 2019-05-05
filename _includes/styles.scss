@@ -26,6 +26,7 @@ amp-img {
 
 article {
   padding: 0.4rem 0;
+  border-bottom: 4px double whitesmoke;
 }
 
 header.main-header {
@@ -35,11 +36,9 @@ header.main-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  position: sticky;
-  top: 0;
   background-color: #fff;
   z-index: 1;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 4px double whitesmoke;
 
   div.page-links {
     & a:first-child {
@@ -370,7 +369,7 @@ div.page-wrapper {
 
       div.book-meta {
         display: flex;
-        margin-top: 5.5em;
+        margin-top: 2.5em;
 
         div.book-thumbnail {
           width: 50%;
@@ -418,9 +417,6 @@ div.page-wrapper {
 
       div.book-teaser {
         margin-top: 1.5em;
-        p {
-          font-size: 1.3em;
-        }
       }
     }
   }
@@ -551,7 +547,8 @@ div.pagination {
 }
 
 .coming-soon {
-  border-left: 4px double whitesmoke;
+  border-top: 4px double whitesmoke;
+  border-bottom: 4px double whitesmoke;
   width: 100%; 
   margin-top: 2rem;
   padding: 1rem 1.5rem;
@@ -561,9 +558,10 @@ div.pagination {
 }
 
 .is-featured {
-  border-left: 4px double whitesmoke;
+  border-top: 4px double whitesmoke;
+  border-bottom: 4px double whitesmoke;
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   padding-left: 1.5rem;
   p {
     font-size: 1.2rem;

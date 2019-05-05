@@ -1,5 +1,5 @@
 {% assign book = site.data.book-data | where: 'name', include.name | first %}
-<div class="book-teaser">
+<div class="book-teaser is-featured">
   {% if page.category == "reviews" %}
   <p>{{ book.teaser }}</p>
   {% endif %}

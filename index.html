@@ -9,8 +9,6 @@ layout: default
     <h3 class="sitetitle-sub">Latest book reviews:</h3>
   </article>
 
-  <hr class="post-separator">
-
   <div>
     {% for post in site.posts limit: 3 %}
     <article class="homepage-posts" itemscope itemtype="http://schema.org/BlogPosting" role="article">
@@ -59,8 +57,6 @@ layout: default
       </div>
 
     </article>
-
-    <hr class="post-separator">
 
     {% endfor %}
   </div>
