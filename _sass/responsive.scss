@@ -53,11 +53,14 @@
         transform: none;
         padding: 0;
         box-shadow: none;
+        display: flex;
 
 
         div.book-meta {
           margin-top: 0;
           width: 50%;
+          flex: 1;
+          padding-right: 0;
 
           div.book-thumbnail {
 
@@ -68,6 +71,13 @@
 
           }
 
+        }
+
+        div.book-teaser {
+          flex: 1;
+          margin-top: 0;
+          padding-left: 0;
+          padding-right: 2rem;
         }
 
       }
@@ -90,6 +100,10 @@
         article {
           padding-bottom: 0.8em;
           flex-direction: row-reverse;
+
+          h2.post-title {
+            margin-top: 1.8rem;
+          }
 
           p {
             width: 100%;
@@ -117,6 +131,19 @@
 
         }
 
+      }
+
+      div#page-col-two {
+        margin-right: 2.5rem;
+
+        div.book-teaser {
+          padding-right: 0;
+        }
+
+        div.book-meta {
+          width: 100%;
+        }
+      
       }
 
     }
@@ -300,9 +327,24 @@
 
       div#page-col-two {
         margin: 1.5em 1.8em;
+        display: block;
 
         div.book-meta {
           width: 100%;
+        }
+
+        div.coming-soon {
+          padding-right: 0;
+        }
+
+        div.is-featured {
+          padding-right: 1rem;
+        }
+
+        div.book-teaser {
+          padding-right: 0;
+          padding-left: 1rem;
+          border-top: none;
         }
 
       }
@@ -313,6 +355,8 @@
 
   footer.site-footer {
     margin: 0;
+    padding: 0 2rem;
+    text-align: center;
   }
 
 }
