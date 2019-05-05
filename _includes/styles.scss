@@ -16,6 +16,16 @@ body {
   background-color: #ffffff;
 }
 
+button {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border: 4px double whitesmoke;
+  box-shadow: 0px 0px 1px 1px gainsboro;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
 main {
   margin-top: 20px;
 }
