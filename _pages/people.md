@@ -11,23 +11,24 @@ navigation_weight: 1
 
 <div class="people-index">
 
-{% assign people = site.data.book-data | sort: 'author' %}
+{% assign authors_grouped = site.data.book-data | group_by: 'index' | sort: 'name' %}
 
 <ul class="people-index-navigation">
-  {% for p in people %}
+{% for index in authors_grouped %}
   <li class="index-letter">
-    <a href="#{{ p.author | slice: 0 }}">{{ p.author | slice: 0 }}</a>
+    <a href="#{{ index.name }}">{{ index.name }}</a>
   </li>
-  {% endfor %}
+{% endfor %}
 </ul>
 
-
 <ul class="people-index-entries">
-  {% for p in people %}
-  <li class="index-entry">
-    <h2 id="{{ p.author | slice: 0 }}" class="index-heading">{{ p.author | slice: 0 }}</h2>
-    <a href="{{ site.baseurl }}/reviews/{{ p.name}}">{{ p.author }} – {{ p.title }}</a>
-  </li>
+  {% for index in authors_grouped %}
+  <h3 id="{{ index.name }}">{{ index.name }}</h3>
+    {% for item in index.items %}
+    <li>
+      <a href="{{ site.baseurl }}/reviews/{{ item.name }}">{{ item.author }} – {{ item.title }}</a>
+    </li>
+    {% endfor %}
   {% endfor %}
 </ul>
 
