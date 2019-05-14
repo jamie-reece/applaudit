@@ -18,6 +18,7 @@ navigation_weight: 1
   <li class="index-letter">
     <a href="#{{ index.name }}">{{ index.name }}</a>
   </li>
+  <span class="index-delimiter">-</span>
 {% endfor %}
 </ul>
 
@@ -25,7 +26,7 @@ navigation_weight: 1
   {% for index in authors_grouped %}
   <h3 id="{{ index.name }}">{{ index.name }}</h3>
     {% for item in index.items %}
-    <li>
+    <li class="index-entry">
       <a href="{{ site.baseurl }}/reviews/{{ item.name }}">{{ item.author }} – {{ item.title }}</a>
     </li>
     {% endfor %}
