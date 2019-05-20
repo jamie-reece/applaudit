@@ -317,6 +317,7 @@ div.page-wrapper {
     }
 
     div#page-col-one {
+      min-width: 100%;
       padding: 0 2.5em;
 
       .post-meta {
@@ -573,6 +574,10 @@ div.pagination {
   width: 100%;
   margin-top: 2rem;
   padding-left: 1.5rem;
+  padding-top: 1rem;
+  h3 {
+    margin: 0.5rem 0;
+  }
   p {
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -582,6 +587,42 @@ div.pagination {
 div.attribution-list {
   p {
     font-size: 1rem;
+  }
+}
+
+ul.people-index-navigation {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 3rem;
+  li a {
+    text-decoration: none;
+    background-repeat: no-repeat;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  span.index-delimiter {
+    color: lightgray;
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+ul.people-index-entries {
+  padding: 0;
+  min-width: 100%;
+  h3 {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid whitesmoke;
+  }
+  li.index-entry {
+    margin-top: 1rem;
+    list-style-type: none;
   }
 }
 

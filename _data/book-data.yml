@@ -5,6 +5,7 @@
 - name: coming-soon
   title: Murmur
   author: Will Eaves
+  index: E
   thumbnail: eaves-murmur.jpg
   publisher: CB Editions
   pub-date: 1st Mar., 2018
@@ -18,6 +19,7 @@
 - name: cusk-outline
   title: Outline
   author: Rachel Cusk
+  index: C
   thumbnail: cusk-outline.jpg
   publisher: Faber & Faber
   pub-date: 3rd May, 2018
@@ -37,6 +39,7 @@
 - name: black-prague-nights
   title: Prague Nights
   author: Benjamin Black
+  index: B
   thumbnail: black-prague-nights.jpg
   publisher: Viking
   pub-date: 1st Jun., 2017
@@ -53,6 +56,7 @@
 - name: johnson-train-dreams
   title: Train Dreams
   author: Denis Johsnon
+  index: J
   thumbnail: johnson-train-dreams.jpg
   publisher: Granta
   pub-date: 4th Jul., 2013
@@ -72,6 +76,7 @@
 - name: johnson-everything-under
   title: Everything Under
   author: Daisy Johnson
+  index: J
   thumbnail: johnson-everything-under.jpg
   publisher: Faber & Faber
   pub-date: 7th Feb., 2019
@@ -91,6 +96,7 @@
 - name: d'arcy-waiting-for-the-bullet
   title: Waiting for the Bullet
   author: Madeleine D’Arcy
+  index: A
   thumbnail: d'arcy-waiting-for-the-bullet.jpg
   publisher: Doire Press
   pub-date: 26th Mar., 2014
