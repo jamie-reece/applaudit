@@ -6,6 +6,7 @@ category: reviews
 tags: [fiction, modern, travel, trilogy, Faber]
 permalink: ":categories/cusk-outline/"
 thumbnail: "cusk-outline.jpg"
+featured: false
 ---
 
 Sint occaecat labore eu amet ad nisi elit aute magna anim cillum laboris est. Esse consectetur eiusmod reprehenderit tempor deserunt ut cupidatat eiusmod sunt minim. Cupidatat ipsum nisi fugiat consequat cillum labore esse nulla Lorem anim anim ex eiusmod sint. Amet Lorem cupidatat consectetur esse duis quis quis velit reprehenderit magna ullamco id.

@@ -6,6 +6,7 @@ category: reviews
 tags: [fiction, Blackwells, debut, booker longlist]
 permalink: ":categories/johnson-everything-under"
 thumbnail: "johnson-everything-under.jpg"
+featured: true
 ---
 
 Velit Lorem laboris reprehenderit anim cillum fugiat exercitation anim dolor. Sint est et cillum cupidatat deserunt mollit ad ut occaecat. Officia laboris anim esse ullamco ea ipsum ea eiusmod pariatur. Labore deserunt fugiat irure sint ex sint nisi non dolore enim nostrud. Do in ea sunt irure ea consequat dolor duis et exercitation. Elit est ea non ea mollit laborum minim proident ipsum incididunt.

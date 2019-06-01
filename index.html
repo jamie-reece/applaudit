@@ -6,11 +6,12 @@ layout: default
 
   <article class="post homepage-title">
     <h1 class="site-title">{{ site.title }}.</h1>
-    <h3 class="sitetitle-sub">Latest book reviews:</h3>
+    <h3 class="sitetitle-sub">Featured reviews</h3>
   </article>
 
+  {% assign featured_posts = site.posts | where: "featured", true %}
   <div>
-    {% for post in site.posts limit: 3 %}
+    {% for post in featured_posts %}
     <article class="homepage-posts" itemscope itemtype="http://schema.org/BlogPosting" role="article">
 
       <div class="post-preview-assets">

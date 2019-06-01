@@ -6,6 +6,7 @@ category: reviews
 tags: [debut,Irish,Cork,shorts,London]
 permalink: ":categories/d'arcy-waiting-for-the-bullet"
 thumbnail: "d'arcy-waiting-for-the-bullet.jpg"
+featured: false
 ---
 
 Ullamco occaecat excepteur non nostrud cillum reprehenderit pariatur reprehenderit. Culpa mollit officia aute nostrud fugiat id proident occaecat in. Eu ad fugiat excepteur reprehenderit dolore in esse qui. Incididunt labore esse ea do sit ea quis eiusmod. Amet laborum duis duis non aute ad do nisi ipsum. Ex nostrud culpa deserunt proident aliqua dolor et amet non veniam ullamco. Dolore incididunt labore laboris dolore minim cupidatat labore do ex nisi anim.
