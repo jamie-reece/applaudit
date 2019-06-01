@@ -15,6 +15,10 @@ $(function toggleSidenav() {
     $('div#page-content-container').toggleClass('has-overlay');
     $('img.nav-icon:nth-child(2)').toggleClass('is-responsive-closed');
     $('img.nav-icon:last-child').toggleClass('is-responsive-closed');
+    $('div.has-overlay').click(function() {
+      $(this).removeClass('has-overlay');
+      $('div#side-nav-container').removeClass('is-expanded');
+    });
   });
 });
 
