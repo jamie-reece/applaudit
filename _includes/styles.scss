@@ -623,7 +623,7 @@ ul.people-index-navigation {
   min-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  li {
+  li.index-entry {
     flex: 0 1 33%;
   }
 }
@@ -634,12 +634,19 @@ ul.people-index-entries {
   h3 {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid whitesmoke;
+    &::before { // offset section when anchor links jump
+      display: block; 
+      content: " "; 
+      margin-top: -1.4rem; 
+      height: 1.4rem; 
+      visibility: hidden; 
+      pointer-events: none;
+    }
   }
   li.index-entry {
     margin-top: 1rem;
     list-style-type: none;
     display: flex;
-    flex: 0 1 33%;
     .book-cover {
       width: 50%;
       margin-right: 0.75rem;

@@ -46,7 +46,6 @@
         height: auto; // temporary hard-coded height for design purposes
         margin-top: 1.8em;
         margin-left: 2.5em;
-        z-index: -1;
         position: inherit;
         top: inherit;
         left: inherit;
@@ -156,7 +155,7 @@
   min-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  li {
+  li.index-entry {
     flex: 0 1 50%;
   }
 }
@@ -360,6 +359,15 @@
 
     }
 
+    .index-entry-block {
+      min-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      li.index-entry {
+        flex: 0 1 100%;
+      }
+    }
+
   }
 
   footer.site-footer {
@@ -368,13 +376,4 @@
     text-align: center;
   }
 
-}
-
-.index-entry-block {
-  min-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  li {
-    flex: 0 1 100%;
-  }
 }
