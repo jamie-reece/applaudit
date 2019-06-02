@@ -208,6 +208,7 @@
           li#nav-item {
             height: 40px;
             border: none;
+            text-align: center;
 
             a#menu-trigger {
               box-sizing: content-box;
@@ -230,6 +231,10 @@
                   display: block;
                 }
 
+                &.hack {
+                  margin-left: 2.5rem;
+                }
+
               }
 
             }
@@ -247,7 +252,7 @@
       }
 
       &.is-expanded {
-        width: 200px;
+        width: 100%;
         box-shadow: 0px 0px 1px 1px whitesmoke;
         background-color: #fff;
 
@@ -258,15 +263,15 @@
           ul.nav-items-list {
 
             li#nav-item {
-              margin-bottom: 0.2em;
-              font-size: 0.9em;
+              margin-bottom: 0.5rem;
+              font-size: 1.1em;
 
               &.active {
                 opacity: 0.5;
               }
 
               a {
-                justify-content: flex-start;
+                justify-content: flex-end;
                 padding-left: 1.2em;
 
                 &#menu-trigger {
