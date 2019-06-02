@@ -671,6 +671,21 @@ ul.people-index-entries {
   }
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.opt-in {
+  margin-top: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.disclaimer {
+  color: gray;
+  font-size: 0.8rem;
+}
+
 // media queries
 
 @import 'responsive';
