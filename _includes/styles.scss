@@ -637,14 +637,6 @@ ul.people-index-entries {
   h3 {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid whitesmoke;
-    &::before { // offset section when anchor links jump
-      display: block; 
-      content: " "; 
-      margin-top: -1.4rem; 
-      height: 1.4rem; 
-      visibility: hidden; 
-      pointer-events: none;
-    }
   }
   li.index-entry {
     margin-top: 1rem;
@@ -680,6 +672,42 @@ ul.people-index-entries {
       font-size: 0.8em;
       color: grey;
       width: 100%;
+    }
+  }
+  li.index-item {
+    list-style-type: none;
+    h4 {
+      margin: 1rem 0;
+      &::before {
+        display: block; 
+        content: " "; 
+        margin-top: -1.4rem; 
+        height: 1.4rem; 
+        visibility: hidden; 
+        pointer-events: none;
+      }
+    }
+    p {
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+    ul.author-titles {
+      list-style-type: none;
+      li {
+        padding-bottom: 0;
+        img.list-bullet {
+          display: inline-block;
+          height: 1.5rem;
+          width: auto;
+        }
+      }
+      li a {
+        text-decoration: none;
+        font-style: italic;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
     }
   }
 }
