@@ -3,7 +3,6 @@ layout: page
 title: About
 desc: What is Gloss’d?
 permalink: /other/about/
-icon: "info.svg"
 ---
 
 General

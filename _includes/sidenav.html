@@ -3,7 +3,7 @@
     <li id="nav-item">
       <a href="{{ site.baseurl }}/">
         <span class="nav-item-descriptor">Home</span>
-        <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/script.png">
+        <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/book-shelf.png">
       </a>
     </li>
     {% assign pages = site.pages | sort:"navigation_weight" %}
@@ -12,7 +12,6 @@
       <li id="nav-item">
           <a href="{{ site.baseurl }}/{{ page.title | downcase }}/">
             <span class="nav-item-descriptor">{{ page.title }}</span>
-            <!-- <i class="{{ site.baseurl }}/assets/icons/{{ page.icon }}"></i> -->
             <img class="nav-icon" src="{{ site.baseurl }}/assets/icons/{{ page.icon }}.png">
           </a>
         </li>

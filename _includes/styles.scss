@@ -601,13 +601,12 @@ ul.people-index-navigation {
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 0;
   list-style-type: none;
   margin-bottom: 3rem;
   line-height: 4rem;
   text-align: center;
-  color: darkcyan;
+  color: darkslategrey;
   flex-wrap: wrap;
   li a {
     text-decoration: none;
@@ -661,6 +660,16 @@ ul.people-index-entries {
     .post-link {
       text-decoration: underline;
       font-style: italic;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    .link-to-post {
+      background-repeat: no-repeat;
+      text-decoration: none;
+      font-size: 1.7rem;
+      font-style: italic;
+      color: black;
       &:hover {
         opacity: 0.6;
       }
