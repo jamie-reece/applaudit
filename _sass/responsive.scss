@@ -142,6 +142,14 @@
         div.book-meta {
           width: 100%;
         }
+
+        div.coming-soon {
+          padding: 1.5rem 0;
+        }
+
+        div.is-featured {
+          padding: 1.5rem 0;
+        }
       
       }
 
@@ -347,11 +355,14 @@
         }
 
         div.coming-soon {
-          padding-right: 0;
+          padding: 1.5rem 1rem;
+          h3 {
+            margin-top: 0;
+          }
         }
 
         div.is-featured {
-          padding-right: 1rem;
+          padding: 1rem;
         }
 
         div.book-teaser {

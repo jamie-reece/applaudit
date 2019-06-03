@@ -428,6 +428,9 @@ div.page-wrapper {
 
       div.book-teaser {
         margin-top: 1.5em;
+        p {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -562,9 +565,10 @@ div.pagination {
   border-bottom: 4px double whitesmoke;
   width: 100%; 
   margin-top: 2rem;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem;
   h3 {
     margin: 0.5rem 0;
+    margin-top: 0;
   }
 }
 
@@ -573,10 +577,10 @@ div.pagination {
   border-bottom: 4px double whitesmoke;
   width: 100%;
   margin-top: 2rem;
-  padding-left: 1.5rem;
-  padding-top: 1rem;
+  padding: 1.5rem;
   h3 {
     margin: 0.5rem 0;
+    margin-top: 0;
   }
   p {
     font-size: 1.2rem;
