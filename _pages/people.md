@@ -23,9 +23,15 @@ navigation_weight: 1
           <li>
             <!-- <img class="list-bullet" src="{{ site.baseurl }}/assets/icons/agenda.png"> -->
             <span>–</span>
+            {% if book.name == 'coming-soon' %}
+            <a class="link-to-post" href="{{ site.baseurl }}/404.html">
+              {{ book.title }}
+            </a>
+            {% else %}
             <a class="link-to-post" href="{{ site.baseurl }}/reviews/{{ book.name }}">
               {{ book.title }}
             </a>
+            {% endif %}
           </li>
           {% endfor %}
         </ul>
