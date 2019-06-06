@@ -13,20 +13,20 @@ navigation_weight: 3
 <!-- `tag_words` is a sorted array of the tag names. -->
 {% assign tag_words = site_tags | split:',' | sort %}
 
-<div>
+<div class="tags-container">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    <h2 id="{{ this_word | cgi_escape }}">{{ this_word | capitalize }}</h2>
-    {% for post in site.tags[this_word] %}{% if post.title != null %}
-      <div>
-        <span style="float: left;">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </span>
-        <span style="float: right;">
-          {{ post.date | date_to_string }}
-        </span>
+    <div class="tag-item">
+      <h3 class="tag-heading" id="{{ this_word | cgi_escape }}">
+        <img src="{{ site.baseurl }}/assets/icons/tag.png">
+        {{ this_word | capitalize }}
+      </h3>
+      {% for post in site.tags[this_word] %}{% if post.title != null %}
+      <div class="tag-associated">
+        <p class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
+        <p class="post-date">{{ post.date | date: "%-d %B, %Y" }}</p>
       </div>
-      <div style="clear: both;"></div>
-    {% endif %}{% endfor %}
-  {% endunless %}{% endfor %}
+      {% endif %}{% endfor %}
+      </div>
+    {% endunless %}{% endfor %}
 </div>

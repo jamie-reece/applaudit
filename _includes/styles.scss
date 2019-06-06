@@ -677,7 +677,7 @@ ul.people-index-entries {
   li.index-item {
     list-style-type: none;
     h4 {
-      margin: 1rem 0;
+      margin: 1rem 0 0.2rem 0;
       &::before {
         display: block; 
         content: " "; 
@@ -725,6 +725,31 @@ ul.people-index-entries {
 .disclaimer {
   color: gray;
   font-size: 0.8rem;
+}
+
+.tags-container {
+  p {
+    margin: 0.5rem 0;
+    &.post-title {
+      font-style: italic;
+    }
+    &.post-date {
+      text-align: right;
+      font-size: 1.2rem;
+    }
+  }
+  img {
+    max-width: 1.25rem;
+    height: auto;
+  }
+  .tag-heading {
+    border-bottom: 1px double whitesmoke;
+    margin-bottom: 0.5rem;
+  }
+  .tag-associated {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 // media queries
