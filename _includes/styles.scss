@@ -208,7 +208,7 @@ div.page-wrapper {
           }
 
           &.active {
-            background-color: whitesmoke;
+            background-color: rgb(250,250,250);
 
             & img.nav-icon {
               opacity: 1;
@@ -223,7 +223,7 @@ div.page-wrapper {
             }
 
             &:hover {
-              background-color: whitesmoke;
+              background-color: rgb(250,250,250);
               opacity: 1;
             }
 
@@ -386,7 +386,7 @@ div.page-wrapper {
       height: 100%;
       padding: 0 2.5em;
       box-shadow: inset 0px -5px 4px 1px #f4f4ef;
-      background-color: #fff;
+      background-color: rgb(250,250,250);
       position: fixed;
       top: 0%;
       left: 100%;
