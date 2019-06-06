@@ -334,6 +334,14 @@ div.page-wrapper {
           color: rgba(126, 125, 125, 0.8);
           text-align: left;
 
+          a {
+            background-repeat: no-repeat;
+            margin-left: -0.2rem;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+
           ul {
             display: flex;
             flex-wrap: wrap;
@@ -745,6 +753,14 @@ ul.people-index-entries {
   .tag-heading {
     border-bottom: 1px double whitesmoke;
     margin-bottom: 0.5rem;
+    &::before {
+      display: block; 
+      content: " "; 
+      margin-top: -1.4rem; 
+      height: 1.4rem; 
+      visibility: hidden; 
+      pointer-events: none;
+    }
   }
   .tag-associated {
     display: flex;

@@ -44,7 +44,12 @@ layout: default
           <div class="post-tags">
             <ul>
               {% for tag in post.tags %}
-              <li class="post-tag"><i class="fas fa-tag"></i>{{ tag | capitalize }}</li>
+              <li class="post-tag">
+                <i class="fas fa-tag"></i>
+                <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">
+                  {{ tag | capitalize }}
+                </a>
+              </li>
               {% endfor %}
             </ul>
           </div>
