@@ -3,7 +3,7 @@ layout: post
 title: 'Denis Johnson – Train Dreams'
 author: Jamie Bowman
 category: reviews
-tags: [fiction, American, trilogy, Granta, short]
+tags: [fiction, american, trilogy, granta, short]
 permalink: ":categories/johnson-train-dreams/"
 thumbnail: "johnson-train-dreams.jpg"
 featured: true

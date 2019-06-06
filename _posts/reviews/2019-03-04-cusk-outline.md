@@ -3,7 +3,7 @@ layout: post
 title: 'Rachel Cusk – Outline'
 author: Jamie Bowman
 category: reviews
-tags: [fiction, modern, travel, trilogy, Faber]
+tags: [fiction, modern, travel, trilogy, faber]
 permalink: ":categories/cusk-outline/"
 thumbnail: "cusk-outline.jpg"
 featured: false
