@@ -18,12 +18,14 @@ navigation_weight: 3
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
     <div class="tag-item">
       <h3 class="tag-heading" id="{{ this_word | cgi_escape }}">
-        <img src="{{ site.baseurl }}/assets/icons/tag.png">
         {{ this_word | capitalize }}
       </h3>
       {% for post in site.tags[this_word] %}{% if post.title != null %}
       <div class="tag-associated">
-        <p class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
+        <p class="post-title">
+          <span>-</span>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </p>
         <p class="post-date">{{ post.date | date: "%-d %B, %Y" }}</p>
       </div>
       {% endif %}{% endfor %}

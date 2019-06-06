@@ -643,7 +643,7 @@ ul.people-index-entries {
   padding: 0;
   min-width: 100%;
   h3 {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
     border-bottom: 1px solid whitesmoke;
   }
   li.index-entry {
@@ -684,7 +684,7 @@ ul.people-index-entries {
   }
   li.index-item {
     list-style-type: none;
-    h4 {
+    p.author-section {
       margin: 1rem 0 0.2rem 0;
       &::before {
         display: block; 
@@ -701,6 +701,7 @@ ul.people-index-entries {
     }
     ul.author-titles {
       list-style-type: none;
+      padding-left: 1rem;
       li {
         padding-bottom: 0;
         img.list-bullet {
@@ -753,6 +754,8 @@ ul.people-index-entries {
   .tag-heading {
     border-bottom: 1px double whitesmoke;
     margin-bottom: 0.5rem;
+    font-weight: 500;
+    padding-bottom: 0.25rem;
     &::before {
       display: block; 
       content: " "; 

@@ -17,7 +17,7 @@ navigation_weight: 1
     {% assign items_grouped = index.items | group_by: 'author' %}
     {% for items in items_grouped %}
       <li class="index-item">
-        <h4 id="{{ items.name | slugify }}">{{ items.name }}</h4>
+        <p class="author-section" id="{{ items.name | slugify }}">{{ items.name }}</p>
         <ul class="author-titles">
           {% for book in items.items %}
           <li>
