@@ -4,6 +4,7 @@
 
     header.main-header {
       width: 100%;
+      margin-right: 0;
     }
 
     div#page-content-container {
@@ -11,6 +12,7 @@
       flex-wrap: wrap;
       width: 100%;
       padding-right: 0.5em;
+      margin-right: 0;
 
       div#page-col-one {
         width: 100%;
@@ -43,8 +45,6 @@
 
       div#page-col-two {
         width: 100%;
-        height: auto; // temporary hard-coded height for design purposes
-        margin-top: 1.8em;
         margin-left: 2.5em;
         position: inherit;
         top: inherit;
@@ -53,6 +53,7 @@
         padding: 0;
         box-shadow: none;
         display: flex;
+        background-color: #fff;
 
 
         div.book-meta {
@@ -81,6 +82,10 @@
 
       }
 
+    }
+
+    footer.site-footer {
+      margin-right: 0;
     }
 
   }
@@ -145,10 +150,12 @@
 
         div.coming-soon {
           padding: 1.5rem 0;
+          margin-top: 0;
         }
 
         div.is-featured {
           padding: 1.5rem 0;
+          margin-top: 0;
         }
       
       }
@@ -178,7 +185,11 @@
       flex-direction: column;
       width: 100%;
       margin: 0;
-      padding: 1.8em 1.8em 1em 1.8em;
+      
+      div.inner-wrapper {
+        margin: 0;
+        padding: 1.2rem 1.8rem;
+      }
 
       div.page-links {
         margin-bottom: 0.2em;
@@ -331,6 +342,7 @@
             width: 99%;
             justify-content: center;
             margin: 0;
+            padding-bottom: 2rem;
 
             img {
               max-width: 55%;
@@ -347,7 +359,7 @@
       }
 
       div#page-col-two {
-        margin: 1.5em 1.8em;
+        margin: 0 1.8em;
         display: block;
 
         div.book-meta {
@@ -356,6 +368,7 @@
 
         div.coming-soon {
           padding: 1.5rem 1rem;
+          margin-bottom: 1.5rem;
           h3 {
             margin-top: 0;
           }
@@ -363,6 +376,7 @@
 
         div.is-featured {
           padding: 1rem;
+
         }
 
         div.book-teaser {
@@ -388,8 +402,7 @@
 
   footer.site-footer {
     margin: 0;
-    padding: 0 2rem;
-    text-align: center;
+    padding: 1rem 2rem;
   }
 
 }
