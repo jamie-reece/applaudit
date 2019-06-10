@@ -316,6 +316,7 @@ div.page-wrapper {
     margin-left: 84px;
     margin-right: 33%;
     display: flex;
+    padding: 0;
 
     &.has-overlay {
       opacity: 0.1;
@@ -325,6 +326,15 @@ div.page-wrapper {
     div#page-col-one {
       min-width: 100%;
       padding: 0 2.5em;
+
+      h2::before {
+        display: block; 
+        content: " "; 
+        margin-top: -1.4rem; 
+        height: 1.4rem; 
+        visibility: hidden; 
+        pointer-events: none;
+      }
 
       .post-meta {
         width: 100%;

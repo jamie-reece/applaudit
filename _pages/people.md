@@ -4,7 +4,7 @@ title: People
 desc: "Authors &c."
 permalink: /people/
 icon: "contact-book"
-navigation_weight: 1
+navigation_weight: 2
 ---
 
 {% assign authors_grouped = site.data.book-data | group_by: 'index' | sort: 'name' %}
