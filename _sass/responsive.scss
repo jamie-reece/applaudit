@@ -15,7 +15,6 @@
 
       div#page-col-one {
         width: 100%;
-        margin-bottom: 2em;
 
         article {
           padding-bottom: 0.5em;
@@ -184,6 +183,7 @@
       flex-direction: column;
       width: 100%;
       margin: 0;
+      margin-bottom: 1.2rem;
       
       div.inner-wrapper {
         margin: 0;
@@ -367,7 +367,7 @@
 
         div.coming-soon {
           padding: 1.5rem 1rem;
-          margin-bottom: 1.5rem;
+          margin-bottom: 0.5rem;
           h3 {
             margin-top: 0;
           }
