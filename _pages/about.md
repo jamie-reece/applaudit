@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-desc: What's it all about?
+desc: 
 permalink: /about/
 icon: "question"
 navigation_weight: 4

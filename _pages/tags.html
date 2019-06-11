@@ -7,28 +7,24 @@ icon: "tag"
 navigation_weight: 3
 ---
 
-<!-- Get the tag name for every tag on the site and set them to the `site_tags` variable. -->
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-
-<!-- `tag_words` is a sorted array of the tag names. -->
-{% assign tag_words = site_tags | split:',' | sort %}
+{% capture counts_with_tags_string %}{% for tag in site.tags %}{{ tag[1] | size | prepend:"000000" | slice:-6,6 }}:{{ tag[0] }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign counts_with_tags = counts_with_tags_string | split:"," | sort | reverse %}
 
 <div class="tags-container">
-  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    <div class="tag-item">
-      <h3 class="tag-heading" id="{{ this_word | cgi_escape }}">
-        {{ this_word | capitalize }}
-      </h3>
-      {% for post in site.tags[this_word] %}{% if post.title != null %}
+  {% for count_with_tag in counts_with_tags %}
+  <div class="tag-item">
+    {% assign tag = count_with_tag | split:":" | last %}
+    {% assign count = site.tags[tag] | size %}
+    <h3 class="tag-heading" id="{{ tag | slugify }}">{{ tag | capitalize }} ({{ count }})</h3>
+    {% for post in site.tags[tag] %}
       <div class="tag-associated">
         <p class="post-title">
           <span>-</span>
-          <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </p>
         <p class="post-date">{{ post.date | date: "%-d %B, %Y" }}</p>
       </div>
-      {% endif %}{% endfor %}
-      </div>
-    {% endunless %}{% endfor %}
+    {% endfor %}
+  </div>
+  {% endfor %}
 </div>
