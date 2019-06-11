@@ -10,7 +10,7 @@ layout: default
   </article>
 
   {% assign featured_posts = site.posts | where: "featured", true %}
-  <div>
+  <div class="homepage-post-container">
     {% for post in featured_posts %}
     <article class="homepage-posts" itemscope itemtype="http://schema.org/BlogPosting" role="article">
 

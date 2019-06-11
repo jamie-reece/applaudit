@@ -139,6 +139,10 @@ blockquote {
 main {
   margin-top: 0;
 
+  .homepage-post-container, .reviews-container {
+    margin-bottom: 1.5rem;
+  }
+
   article {
     width: 100%;
 
